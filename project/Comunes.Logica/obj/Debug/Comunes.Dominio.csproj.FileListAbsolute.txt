@@ -7,3 +7,12 @@ G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Logica\bin\Debug\Comunes.Enti
 G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Logica\obj\Debug\Comunes.Dominio.csprojResolveAssemblyReference.cache
 G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Logica\obj\Debug\Comunes.Logica.dll
 G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Logica\obj\Debug\Comunes.Logica.pdb
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\Comunes.Logica\bin\Debug\Comunes.Logica.dll
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\Comunes.Logica\bin\Debug\Comunes.Logica.pdb
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\Comunes.Logica\bin\Debug\Comunes.Datos.dll
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\Comunes.Logica\bin\Debug\Comunes.Entidades.dll
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\Comunes.Logica\bin\Debug\Comunes.Datos.pdb
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\Comunes.Logica\bin\Debug\Comunes.Entidades.pdb
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\Comunes.Logica\obj\Debug\Comunes.Dominio.csprojResolveAssemblyReference.cache
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\Comunes.Logica\obj\Debug\Comunes.Logica.dll
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\Comunes.Logica\obj\Debug\Comunes.Logica.pdb

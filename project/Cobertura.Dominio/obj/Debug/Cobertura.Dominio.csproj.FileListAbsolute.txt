@@ -7,3 +7,12 @@ G:\Users\Diana E\Desktop\SISCSHARP\project\Cobertura.Dominio\bin\Debug\Comunes.U
 G:\Users\Diana E\Desktop\SISCSHARP\project\Cobertura.Dominio\obj\Debug\Cobertura.Dominio.csprojResolveAssemblyReference.cache
 G:\Users\Diana E\Desktop\SISCSHARP\project\Cobertura.Dominio\obj\Debug\Cobertura.Dominio.dll
 G:\Users\Diana E\Desktop\SISCSHARP\project\Cobertura.Dominio\obj\Debug\Cobertura.Dominio.pdb
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\Cobertura.Dominio\bin\Debug\Cobertura.Dominio.dll
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\Cobertura.Dominio\bin\Debug\Cobertura.Dominio.pdb
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\Cobertura.Dominio\bin\Debug\Cobertura.Datos.dll
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\Cobertura.Dominio\bin\Debug\Comunes.Utilitarios.dll
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\Cobertura.Dominio\bin\Debug\Cobertura.Datos.pdb
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\Cobertura.Dominio\bin\Debug\Comunes.Utilitarios.pdb
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\Cobertura.Dominio\obj\Debug\Cobertura.Dominio.csprojResolveAssemblyReference.cache
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\Cobertura.Dominio\obj\Debug\Cobertura.Dominio.dll
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\Cobertura.Dominio\obj\Debug\Cobertura.Dominio.pdb

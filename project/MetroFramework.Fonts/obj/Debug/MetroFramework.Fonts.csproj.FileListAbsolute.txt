@@ -5,3 +5,10 @@ G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework.Fonts\bin\Debug\MetroF
 G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.csprojResolveAssemblyReference.cache
 G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.dll
 G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.pdb
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\MetroFramework.Fonts\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\MetroFramework.Fonts\bin\Debug\MetroFramework.Fonts.pdb
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\MetroFramework.Fonts\bin\Debug\MetroFramework.dll
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\MetroFramework.Fonts\bin\Debug\MetroFramework.pdb
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.csprojResolveAssemblyReference.cache
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.dll
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.pdb

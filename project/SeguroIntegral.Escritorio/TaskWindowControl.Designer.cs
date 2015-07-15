@@ -28,19 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.lblMessage = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
+            // 
+            // lblMessage
+            // 
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.lblMessage.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.lblMessage.Location = new System.Drawing.Point(24, 26);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(118, 25);
+            this.lblMessage.TabIndex = 0;
+            this.lblMessage.Text = "metroLabel1";
             // 
             // TaskWindowControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblMessage);
             this.Name = "TaskWindowControl";
-            this.Size = new System.Drawing.Size(290, 181);
+            this.Size = new System.Drawing.Size(414, 155);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private MetroFramework.Controls.MetroLabel lblMensaje;
+        private MetroFramework.Controls.MetroLabel lblMessage;
 
     }
 }

@@ -2,7 +2,6 @@
 using System.Drawing;
 using System.Globalization;
 using System.Windows.Forms;
-using MetroFramework;
 using MetroFramework.Forms;
 using System.Data;
 
@@ -27,7 +26,7 @@ namespace SeguroIntegral.Escritorio
                 Variables.instancia().codigo = objUsuario.idUsuario;
                 Variables.instancia().usuario = objUsuario.inciales;
                 Variables.instancia().nombres= objUsuario.nombres;
-                //MetroMessageBox.Show(this, "Bienvenido", "Sistema Seguro Integral");
+                //MetroTaskWindow.ShowTaskWindow(new Control, "SubControl in TaskWindow", new TaskWindowControl(), 10);
                 txtClave.Text = "";
                 frmMenu Menu = new frmMenu();           
                 Menu.ShowDialog();
@@ -47,7 +46,13 @@ namespace SeguroIntegral.Escritorio
         private void btnLogin_Click(object sender, EventArgs e)
         {
            // this.Acceder();
-            MetroTaskWindow.ShowTaskWindow(this, "SubControl in TaskWindow", new TaskWindowControl(), 10);
+            TaskWindowControl ob = new TaskWindowControl();
+            
+            Variables.instancia().mensaje = "HOLAAA";
+            MetroTaskWindow.ShowTaskWindow("HOLA", ob, 10);
+
+            //MetroTaskWindow.ShowTaskWindow(ob, "BIEVENIDO", ob, 10);
+
         }
 
         private void frmLogin_Load(object sender, EventArgs e)

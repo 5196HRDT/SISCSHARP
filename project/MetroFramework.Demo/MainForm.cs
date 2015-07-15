@@ -26,7 +26,7 @@ namespace MetroFramework.Demo
         {
             var m = new Random();
             int next = m.Next(0, 13);
-            metroStyleManager.Style = (MetroColorStyle)next;
+           metroStyleManager.Style = (MetroColorStyle)next;
         }
 
         private void metroTile1_Click(object sender, EventArgs e)
@@ -36,7 +36,7 @@ namespace MetroFramework.Demo
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
-            MetroTaskWindow.ShowTaskWindow(this,"SubControl in TaskWindow", new TaskWindowControl(), 10);
+            MetroTaskWindow.ShowTaskWindow(this, "SubControl in TaskWindow", new TaskWindowControl(), 10);
         }
 
         private void metroButton2_Click(object sender, EventArgs e)
@@ -87,6 +87,12 @@ namespace MetroFramework.Demo
         private void metroButton4_Click(object sender, EventArgs e)
         {
             metroTextBox2.Focus();
+        }
+
+        private void metroButton4_Click_1(object sender, EventArgs e)
+        {
+            MetroTaskWindow.ShowTaskWindow(this, "SubControl in TaskWindow", new TaskWindowControl(), 10);
+    
         }
     }
 }

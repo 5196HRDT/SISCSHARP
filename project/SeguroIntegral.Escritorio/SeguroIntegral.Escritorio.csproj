@@ -32,6 +32,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.3.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MetroModernUI.1.3.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.3.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MetroModernUI.1.3.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.3.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MetroModernUI.1.3.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,6 +61,12 @@
     </Compile>
     <Compile Include="fmrMenu.Designer.cs">
       <DependentUpon>fmrMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCobertura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCobertura.Designer.cs">
+      <DependentUpon>frmCobertura.cs</DependentUpon>
     </Compile>
     <Compile Include="frmConsultaCobertura.cs">
       <SubType>Form</SubType>
@@ -73,6 +91,9 @@
     <EmbeddedResource Include="fmrMenu.resx">
       <DependentUpon>fmrMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCobertura.resx">
+      <DependentUpon>frmCobertura.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaCobertura.resx">
       <DependentUpon>frmConsultaCobertura.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +113,7 @@
     <EmbeddedResource Include="TaskWindowControl.resx">
       <DependentUpon>TaskWindowControl.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -114,18 +136,6 @@
     <ProjectReference Include="..\Comunes.Utilitarios\Comunes.Utilitarios.csproj">
       <Project>{eabba527-8e20-4350-999c-7f56a3aac8a3}</Project>
       <Name>Comunes.Utilitarios</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MetroFramework.Design\MetroFramework.Design.csproj">
-      <Project>{7316584d-9a16-4280-a8ab-6d45198c6e4d}</Project>
-      <Name>MetroFramework.Design</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MetroFramework.Fonts\MetroFramework.Fonts.csproj">
-      <Project>{5a2fcae8-c2fa-41bd-90ea-16103ea07b26}</Project>
-      <Name>MetroFramework.Fonts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MetroFramework\MetroFramework.csproj">
-      <Project>{bb41ac8b-cbed-4387-a7e0-4567edb3f57f}</Project>
-      <Name>MetroFramework</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

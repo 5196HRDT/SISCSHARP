@@ -5,3 +5,10 @@ G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework.Design\bin\Debug\Metro
 G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework.Design\obj\Debug\MetroFramework.Design.csprojResolveAssemblyReference.cache
 G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework.Design\obj\Debug\MetroFramework.Design.dll
 G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework.Design\obj\Debug\MetroFramework.Design.pdb
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\MetroFramework.Design\bin\Debug\MetroFramework.Design.dll
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\MetroFramework.Design\bin\Debug\MetroFramework.Design.pdb
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\MetroFramework.Design\bin\Debug\MetroFramework.dll
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\MetroFramework.Design\bin\Debug\MetroFramework.pdb
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\MetroFramework.Design\obj\Debug\MetroFramework.Design.csprojResolveAssemblyReference.cache
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\MetroFramework.Design\obj\Debug\MetroFramework.Design.dll
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\MetroFramework.Design\obj\Debug\MetroFramework.Design.pdb

@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.txtUsuario = new MetroFramework.Controls.MetroTextBox();
             this.lblUsuario = new MetroFramework.Controls.MetroLabel();
             this.lblPass = new MetroFramework.Controls.MetroLabel();
             this.txtClave = new MetroFramework.Controls.MetroTextBox();
+            this.metroStyleManager = new MetroFramework.Components.MetroStyleManager(this.components);
             this.btnLogin = new MetroFramework.Controls.MetroButton();
+            ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager)).BeginInit();
             this.SuspendLayout();
             // 
             // txtUsuario
@@ -94,11 +97,15 @@
             this.txtClave.UseSystemPasswordChar = true;
             this.txtClave.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtClave_KeyDown);
             // 
+            // metroStyleManager
+            // 
+            this.metroStyleManager.Owner = this;
+            // 
             // btnLogin
             // 
             this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnLogin.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.btnLogin.Location = new System.Drawing.Point(296, 70);
+            this.btnLogin.Location = new System.Drawing.Point(302, 68);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(106, 64);
             this.btnLogin.TabIndex = 3;
@@ -120,15 +127,16 @@
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.txtClave);
             this.Controls.Add(this.txtUsuario);
-            this.ForeColor = System.Drawing.Color.Black;
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmLogin";
             this.Resizable = false;
-            this.ShadowType = MetroFramework.Forms.MetroFormShadowType.SystemShadow;
+            this.ShadowType = MetroFramework.Forms.MetroFormShadowType.AeroShadow;
             this.Style = MetroFramework.MetroColorStyle.Teal;
             this.Text = "SEGURO INTEGRAL DE SALUD";
             this.Load += new System.EventHandler(this.frmLogin_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,6 +148,7 @@
         private MetroFramework.Controls.MetroLabel lblUsuario;
         private MetroFramework.Controls.MetroLabel lblPass;
         private MetroFramework.Controls.MetroTextBox txtClave;
+        private MetroFramework.Components.MetroStyleManager metroStyleManager;
         private MetroFramework.Controls.MetroButton btnLogin;
     }
 }
