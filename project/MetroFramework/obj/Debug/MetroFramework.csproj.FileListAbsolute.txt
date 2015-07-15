@@ -1,0 +1,9 @@
+G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework\bin\Debug\MetroFramework.dll
+G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework\bin\Debug\MetroFramework.pdb
+G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework\obj\Debug\MetroFramework.csprojResolveAssemblyReference.cache
+G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework\obj\Debug\MetroFramework.Controls.MetroGrid.resources
+G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework\obj\Debug\MetroFramework.MetroMessageBoxControl.resources
+G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework\obj\Debug\MetroFramework.Properties.Resources.resources
+G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework\obj\Debug\MetroFramework.csproj.GenerateResource.Cache
+G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework\obj\Debug\MetroFramework.dll
+G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework\obj\Debug\MetroFramework.pdb

@@ -1,0 +1,9 @@
+G:\Users\Diana E\Desktop\SISCSHARP\project\Cobertura.Dominio\bin\Debug\Cobertura.Dominio.dll
+G:\Users\Diana E\Desktop\SISCSHARP\project\Cobertura.Dominio\bin\Debug\Cobertura.Dominio.pdb
+G:\Users\Diana E\Desktop\SISCSHARP\project\Cobertura.Dominio\bin\Debug\Cobertura.Datos.dll
+G:\Users\Diana E\Desktop\SISCSHARP\project\Cobertura.Dominio\bin\Debug\Comunes.Utilitarios.dll
+G:\Users\Diana E\Desktop\SISCSHARP\project\Cobertura.Dominio\bin\Debug\Cobertura.Datos.pdb
+G:\Users\Diana E\Desktop\SISCSHARP\project\Cobertura.Dominio\bin\Debug\Comunes.Utilitarios.pdb
+G:\Users\Diana E\Desktop\SISCSHARP\project\Cobertura.Dominio\obj\Debug\Cobertura.Dominio.csprojResolveAssemblyReference.cache
+G:\Users\Diana E\Desktop\SISCSHARP\project\Cobertura.Dominio\obj\Debug\Cobertura.Dominio.dll
+G:\Users\Diana E\Desktop\SISCSHARP\project\Cobertura.Dominio\obj\Debug\Cobertura.Dominio.pdb

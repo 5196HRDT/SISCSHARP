@@ -1,0 +1,6 @@
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework.Design\bin\Release\MetroFramework.Design.dll
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework.Design\bin\Release\MetroFramework.Design.pdb
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework.Design\bin\Release\MetroFramework.dll
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework.Design\obj\Release\MetroFramework.Design.csprojResolveAssemblyReference.cache
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework.Design\obj\Release\MetroFramework.Design.dll
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework.Design\obj\Release\MetroFramework.Design.pdb

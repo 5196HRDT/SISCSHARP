@@ -9,7 +9,7 @@ namespace Cobertura.Datos
     public class CoberturaDao : Singleton
     {
         private CoberturaDao():base(){}
-        public List<Cobertura>
+      
 
     }
 }

@@ -1,0 +1,7 @@
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework\obj\Release\MetroFramework.Controls.MetroGrid.resources
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework\obj\Release\MetroFramework.MetroMessageBoxControl.resources
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework\obj\Release\MetroFramework.Properties.Resources.resources
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework\obj\Release\MetroFramework.csproj.GenerateResource.Cache
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework\bin\Release\MetroFramework.dll
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework\obj\Release\MetroFramework.csprojResolveAssemblyReference.cache
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework\obj\Release\MetroFramework.dll

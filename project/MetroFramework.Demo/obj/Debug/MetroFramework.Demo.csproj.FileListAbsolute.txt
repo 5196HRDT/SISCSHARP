@@ -1,0 +1,15 @@
+G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework.Demo\bin\Debug\Data\Books.xml
+G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework.Demo\bin\Debug\MetroFramework.Demo.exe.config
+G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework.Demo\bin\Debug\MetroFramework.Demo.exe
+G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework.Demo\bin\Debug\MetroFramework.Demo.pdb
+G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework.Demo\bin\Debug\MetroFramework.dll
+G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework.Demo\bin\Debug\MetroFramework.Fonts.dll
+G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework.Demo\bin\Debug\MetroFramework.Fonts.pdb
+G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework.Demo\bin\Debug\MetroFramework.pdb
+G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.csprojResolveAssemblyReference.cache
+G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.MainForm.resources
+G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.Properties.Resources.resources
+G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.TaskWindowControl.resources
+G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.csproj.GenerateResource.Cache
+G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.exe
+G:\Users\Diana E\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.pdb

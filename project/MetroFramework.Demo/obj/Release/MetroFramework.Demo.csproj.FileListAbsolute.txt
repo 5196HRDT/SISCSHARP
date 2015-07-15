@@ -1,0 +1,17 @@
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework.Demo\bin\Release\Data\Books.xml
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework.Demo\bin\Release\MetroFramework.Demo.exe.config
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework.Demo\bin\Release\MetroFramework.Demo.exe
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework.Demo\bin\Release\MetroFramework.Demo.pdb
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework.Demo\bin\Release\MetroFramework.dll
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework.Demo\bin\Release\MetroFramework.Fonts.dll
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework.Demo\bin\Release\MetroFramework.Fonts.pdb
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework.Demo\obj\Release\MetroFramework.Demo.csprojResolveAssemblyReference.cache
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework.Demo\obj\Release\MetroFramework.Demo.MainForm.resources
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework.Demo\obj\Release\MetroFramework.Demo.Properties.Resources.resources
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework.Demo\obj\Release\MetroFramework.Demo.TaskWindowControl.resources
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework.Demo\obj\Release\MetroFramework.Demo.csproj.GenerateResource.Cache
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework.Demo\obj\Release\MetroFramework.Demo.exe
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework.Demo\obj\Release\MetroFramework.Demo.pdb
+H:\winforms-modernui-master\MetroFramework.Demo\bin\Release\MetroFramework.Demo.exe.config
+H:\winforms-modernui-master\MetroFramework.Demo\obj\Release\MetroFramework.Demo.exe
+H:\winforms-modernui-master\MetroFramework.Demo\obj\Release\MetroFramework.Demo.pdb

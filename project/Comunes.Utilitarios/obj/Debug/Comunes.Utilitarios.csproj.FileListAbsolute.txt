@@ -1,0 +1,5 @@
+G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Utilitarios\bin\Debug\Comunes.Utilitarios.dll
+G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Utilitarios\bin\Debug\Comunes.Utilitarios.pdb
+G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Utilitarios\obj\Debug\Comunes.Utilitarios.csprojResolveAssemblyReference.cache
+G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Utilitarios\obj\Debug\Comunes.Utilitarios.dll
+G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Utilitarios\obj\Debug\Comunes.Utilitarios.pdb

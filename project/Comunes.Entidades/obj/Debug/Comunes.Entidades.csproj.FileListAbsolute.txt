@@ -1,0 +1,4 @@
+G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Entidades\bin\Debug\Comunes.Entidades.dll
+G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Entidades\bin\Debug\Comunes.Entidades.pdb
+G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Entidades\obj\Debug\Comunes.Entidades.dll
+G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Entidades\obj\Debug\Comunes.Entidades.pdb

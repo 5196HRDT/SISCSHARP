@@ -46,7 +46,8 @@ namespace SeguroIntegral.Escritorio
         
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            this.Acceder();
+           // this.Acceder();
+            MetroTaskWindow.ShowTaskWindow(this, "SubControl in TaskWindow", new TaskWindowControl(), 10);
         }
 
         private void frmLogin_Load(object sender, EventArgs e)

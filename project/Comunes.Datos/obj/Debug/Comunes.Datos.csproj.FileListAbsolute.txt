@@ -1,0 +1,7 @@
+G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Datos\bin\Debug\Comunes.Datos.dll
+G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Datos\bin\Debug\Comunes.Datos.pdb
+G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Datos\bin\Debug\Comunes.Entidades.dll
+G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Datos\bin\Debug\Comunes.Entidades.pdb
+G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Datos\obj\Debug\Comunes.Datos.csprojResolveAssemblyReference.cache
+G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Datos\obj\Debug\Comunes.Datos.dll
+G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Datos\obj\Debug\Comunes.Datos.pdb

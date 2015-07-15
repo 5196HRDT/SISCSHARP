@@ -1,0 +1,6 @@
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework.Fonts\bin\Release\MetroFramework.Fonts.dll
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework.Fonts\bin\Release\MetroFramework.Fonts.pdb
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework.Fonts\bin\Release\MetroFramework.dll
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework.Fonts\obj\Release\MetroFramework.Fonts.csprojResolveAssemblyReference.cache
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework.Fonts\obj\Release\MetroFramework.Fonts.dll
+D:\Users\Jefatura\Desktop\winforms-modernui-master\MetroFramework.Fonts\obj\Release\MetroFramework.Fonts.pdb

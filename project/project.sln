@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30110.0
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comunes.Datos", "Comunes.Datos\Comunes.Datos.csproj", "{04B2757C-972E-4673-9869-27E04D741E18}"
 EndProject
@@ -32,6 +32,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cobertura.Entidades", "Cobertura.Entidades\Cobertura.Entidades.csproj", "{3FF13F98-991B-4D32-B94B-1853ED15CDFF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeguroIntegral.Entidades", "SeguroIntegral.Entidades\SeguroIntegral.Entidades.csproj", "{20583F1A-81AA-4340-8F50-F3F8C995EBB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetroFramework.Design", "MetroFramework.Design\MetroFramework.Design.csproj", "{7316584D-9A16-4280-A8AB-6D45198C6E4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetroFramework", "MetroFramework\MetroFramework.csproj", "{BB41AC8B-CBED-4387-A7E0-4567EDB3F57F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetroFramework.Fonts", "MetroFramework.Fonts\MetroFramework.Fonts.csproj", "{5A2FCAE8-C2FA-41BD-90EA-16103EA07B26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetroFramework.Demo", "MetroFramework.Demo\MetroFramework.Demo.csproj", "{AF988819-4618-4852-9506-C1D06D04F6B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +87,22 @@ Global
 		{20583F1A-81AA-4340-8F50-F3F8C995EBB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20583F1A-81AA-4340-8F50-F3F8C995EBB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20583F1A-81AA-4340-8F50-F3F8C995EBB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7316584D-9A16-4280-A8AB-6D45198C6E4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7316584D-9A16-4280-A8AB-6D45198C6E4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7316584D-9A16-4280-A8AB-6D45198C6E4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7316584D-9A16-4280-A8AB-6D45198C6E4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB41AC8B-CBED-4387-A7E0-4567EDB3F57F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB41AC8B-CBED-4387-A7E0-4567EDB3F57F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB41AC8B-CBED-4387-A7E0-4567EDB3F57F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB41AC8B-CBED-4387-A7E0-4567EDB3F57F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A2FCAE8-C2FA-41BD-90EA-16103EA07B26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A2FCAE8-C2FA-41BD-90EA-16103EA07B26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A2FCAE8-C2FA-41BD-90EA-16103EA07B26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A2FCAE8-C2FA-41BD-90EA-16103EA07B26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF988819-4618-4852-9506-C1D06D04F6B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF988819-4618-4852-9506-C1D06D04F6B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF988819-4618-4852-9506-C1D06D04F6B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF988819-4618-4852-9506-C1D06D04F6B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -94,5 +118,9 @@ Global
 		{63212589-3C56-4E85-AA9B-0FA0E85E0ABB} = {F3C435E7-4199-40A9-8421-89681F115674}
 		{3102E050-775E-4D74-B198-520ECC467483} = {D50EBB8E-FD00-4BE0-8A2C-D5C6C6CEFDF5}
 		{EABBA527-8E20-4350-999C-7F56A3AAC8A3} = {7FCB43F3-48D7-43DE-B2E9-DDF13E477A87}
+		{7316584D-9A16-4280-A8AB-6D45198C6E4D} = {7FCB43F3-48D7-43DE-B2E9-DDF13E477A87}
+		{BB41AC8B-CBED-4387-A7E0-4567EDB3F57F} = {7FCB43F3-48D7-43DE-B2E9-DDF13E477A87}
+		{5A2FCAE8-C2FA-41BD-90EA-16103EA07B26} = {7FCB43F3-48D7-43DE-B2E9-DDF13E477A87}
+		{AF988819-4618-4852-9506-C1D06D04F6B2} = {7FCB43F3-48D7-43DE-B2E9-DDF13E477A87}
 	EndGlobalSection
 EndGlobal

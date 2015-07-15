@@ -1,0 +1,9 @@
+G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Logica\bin\Debug\Comunes.Logica.dll
+G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Logica\bin\Debug\Comunes.Logica.pdb
+G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Logica\bin\Debug\Comunes.Datos.dll
+G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Logica\bin\Debug\Comunes.Entidades.dll
+G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Logica\bin\Debug\Comunes.Datos.pdb
+G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Logica\bin\Debug\Comunes.Entidades.pdb
+G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Logica\obj\Debug\Comunes.Dominio.csprojResolveAssemblyReference.cache
+G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Logica\obj\Debug\Comunes.Logica.dll
+G:\Users\Diana E\Desktop\SISCSHARP\project\Comunes.Logica\obj\Debug\Comunes.Logica.pdb
