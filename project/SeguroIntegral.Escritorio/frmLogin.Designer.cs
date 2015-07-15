@@ -28,15 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.txtUsuario = new MetroFramework.Controls.MetroTextBox();
             this.lblUsuario = new MetroFramework.Controls.MetroLabel();
             this.lblPass = new MetroFramework.Controls.MetroLabel();
             this.txtClave = new MetroFramework.Controls.MetroTextBox();
-            this.metroStyleManager = new MetroFramework.Components.MetroStyleManager(this.components);
             this.btnLogin = new MetroFramework.Controls.MetroButton();
-            ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager)).BeginInit();
             this.SuspendLayout();
             // 
             // txtUsuario
@@ -54,7 +51,6 @@
             this.txtUsuario.TabIndex = 1;
             this.txtUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtUsuario.UseSelectable = true;
-            this.txtUsuario.UseWaitCursor = true;
             this.txtUsuario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtUsuario_KeyDown);
             this.txtUsuario.Leave += new System.EventHandler(this.txtUsuario_Leave);
             // 
@@ -97,10 +93,6 @@
             this.txtClave.UseSystemPasswordChar = true;
             this.txtClave.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtClave_KeyDown);
             // 
-            // metroStyleManager
-            // 
-            this.metroStyleManager.Owner = this;
-            // 
             // btnLogin
             // 
             this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -136,7 +128,6 @@
             this.Style = MetroFramework.MetroColorStyle.Teal;
             this.Text = "SEGURO INTEGRAL DE SALUD";
             this.Load += new System.EventHandler(this.frmLogin_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,7 +139,6 @@
         private MetroFramework.Controls.MetroLabel lblUsuario;
         private MetroFramework.Controls.MetroLabel lblPass;
         private MetroFramework.Controls.MetroTextBox txtClave;
-        private MetroFramework.Components.MetroStyleManager metroStyleManager;
         private MetroFramework.Controls.MetroButton btnLogin;
     }
 }

@@ -46,6 +46,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -125,6 +126,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Cobertura.Entidades\Cobertura.Entidades.csproj">
+      <Project>{3ff13f98-991b-4d32-b94b-1853ed15cdff}</Project>
+      <Name>Cobertura.Entidades</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Comunes.Entidades\Comunes.Entidades.csproj">
       <Project>{1730f5e1-9c22-4246-a96d-74b9db5bf03c}</Project>
       <Name>Comunes.Entidades</Name>
@@ -136,6 +141,18 @@
     <ProjectReference Include="..\Comunes.Utilitarios\Comunes.Utilitarios.csproj">
       <Project>{eabba527-8e20-4350-999c-7f56a3aac8a3}</Project>
       <Name>Comunes.Utilitarios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Derivacion.Logica\Derivacion.Dominio.csproj">
+      <Project>{b4564269-57c3-4406-a70e-d958f7c4919e}</Project>
+      <Name>Derivacion.Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SeguroIntegral.Dominio\SeguroIntegral.Dominio.csproj">
+      <Project>{20047a7e-c240-4fba-950c-de7a681c055a}</Project>
+      <Name>SeguroIntegral.Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SeguroIntegral.Entidades\SeguroIntegral.Entidades.csproj">
+      <Project>{20583f1a-81aa-4340-8f50-f3f8c995ebb2}</Project>
+      <Name>SeguroIntegral.Entidades</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

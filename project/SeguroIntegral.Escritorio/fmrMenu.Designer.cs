@@ -28,33 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tbPaciente = new MetroFramework.Controls.MetroTabPage();
+            this.tbPersona = new MetroFramework.Controls.MetroTabPage();
             this.mtAmpliacion = new MetroFramework.Controls.MetroTile();
             this.tbMenu = new MetroFramework.Controls.MetroTabControl();
             this.tbConsultas = new System.Windows.Forms.TabPage();
             this.mtAltoCosto = new MetroFramework.Controls.MetroTile();
-            this.tbPaciente.SuspendLayout();
+            this.tbPersona.SuspendLayout();
             this.tbMenu.SuspendLayout();
             this.tbConsultas.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tbPaciente
+            // tbPersona
             // 
-            this.tbPaciente.Controls.Add(this.mtAmpliacion);
-            this.tbPaciente.HorizontalScrollbarBarColor = true;
-            this.tbPaciente.HorizontalScrollbarHighlightOnWheel = false;
-            this.tbPaciente.HorizontalScrollbarSize = 10;
-            this.tbPaciente.Location = new System.Drawing.Point(4, 44);
-            this.tbPaciente.Name = "tbPaciente";
-            this.tbPaciente.Padding = new System.Windows.Forms.Padding(35);
-            this.tbPaciente.Size = new System.Drawing.Size(872, 380);
-            this.tbPaciente.Style = MetroFramework.MetroColorStyle.Teal;
-            this.tbPaciente.TabIndex = 1;
-            this.tbPaciente.Text = "Paciente";
-            this.tbPaciente.VerticalScrollbarBarColor = true;
-            this.tbPaciente.VerticalScrollbarHighlightOnWheel = false;
-            this.tbPaciente.VerticalScrollbarSize = 10;
-            this.tbPaciente.Visible = false;
+            this.tbPersona.Controls.Add(this.mtAmpliacion);
+            this.tbPersona.HorizontalScrollbarBarColor = true;
+            this.tbPersona.HorizontalScrollbarHighlightOnWheel = false;
+            this.tbPersona.HorizontalScrollbarSize = 10;
+            this.tbPersona.Location = new System.Drawing.Point(4, 44);
+            this.tbPersona.Name = "tbPersona";
+            this.tbPersona.Padding = new System.Windows.Forms.Padding(35);
+            this.tbPersona.Size = new System.Drawing.Size(1102, 578);
+            this.tbPersona.Style = MetroFramework.MetroColorStyle.Teal;
+            this.tbPersona.TabIndex = 1;
+            this.tbPersona.Text = "Persona";
+            this.tbPersona.VerticalScrollbarBarColor = true;
+            this.tbPersona.VerticalScrollbarHighlightOnWheel = false;
+            this.tbPersona.VerticalScrollbarSize = 10;
+            this.tbPersona.Visible = false;
             // 
             // mtAmpliacion
             // 
@@ -74,18 +74,19 @@
             this.mtAmpliacion.UseSelectable = true;
             this.mtAmpliacion.UseStyleColors = true;
             this.mtAmpliacion.UseTileImage = true;
+            this.mtAmpliacion.Click += new System.EventHandler(this.mtAmpliacion_Click);
             // 
             // tbMenu
             // 
-            this.tbMenu.Controls.Add(this.tbPaciente);
+            this.tbMenu.Controls.Add(this.tbPersona);
             this.tbMenu.Controls.Add(this.tbConsultas);
             this.tbMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbMenu.FontSize = MetroFramework.MetroTabControlSize.Tall;
             this.tbMenu.FontWeight = MetroFramework.MetroTabControlWeight.Bold;
             this.tbMenu.Location = new System.Drawing.Point(20, 60);
             this.tbMenu.Name = "tbMenu";
-            this.tbMenu.SelectedIndex = 1;
-            this.tbMenu.Size = new System.Drawing.Size(880, 428);
+            this.tbMenu.SelectedIndex = 0;
+            this.tbMenu.Size = new System.Drawing.Size(1110, 626);
             this.tbMenu.Style = MetroFramework.MetroColorStyle.Teal;
             this.tbMenu.TabIndex = 0;
             this.tbMenu.UseSelectable = true;
@@ -96,7 +97,7 @@
             this.tbConsultas.Location = new System.Drawing.Point(4, 44);
             this.tbConsultas.Name = "tbConsultas";
             this.tbConsultas.Padding = new System.Windows.Forms.Padding(35);
-            this.tbConsultas.Size = new System.Drawing.Size(872, 380);
+            this.tbConsultas.Size = new System.Drawing.Size(1102, 578);
             this.tbConsultas.TabIndex = 2;
             this.tbConsultas.Text = "Consultas";
             // 
@@ -108,7 +109,7 @@
             this.mtAltoCosto.Size = new System.Drawing.Size(217, 167);
             this.mtAltoCosto.Style = MetroFramework.MetroColorStyle.Silver;
             this.mtAltoCosto.TabIndex = 0;
-            this.mtAltoCosto.Text = "Paciente Alto Costo";
+            this.mtAltoCosto.Text = "Persona Alto Costo";
             this.mtAltoCosto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.mtAltoCosto.TileImage = global::SeguroIntegral.Escritorio.Properties.Resources.Dollar128;
             this.mtAltoCosto.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -126,13 +127,13 @@
             this.BackImage = global::SeguroIntegral.Escritorio.Properties.Resources.GitHub_Mark;
             this.BackImagePadding = new System.Windows.Forms.Padding(450, 10, 0, 0);
             this.BackMaxSize = 50;
-            this.ClientSize = new System.Drawing.Size(920, 508);
+            this.ClientSize = new System.Drawing.Size(1150, 706);
             this.Controls.Add(this.tbMenu);
             this.Name = "frmMenu";
             this.Style = MetroFramework.MetroColorStyle.Teal;
             this.Text = "SISTEMA SEGURO INTEGRAL DE SALUD";
-            this.tbPaciente.ResumeLayout(false);
-            this.tbPaciente.PerformLayout();
+            this.tbPersona.ResumeLayout(false);
+            this.tbPersona.PerformLayout();
             this.tbMenu.ResumeLayout(false);
             this.tbConsultas.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -141,7 +142,7 @@
 
         #endregion
 
-        private MetroFramework.Controls.MetroTabPage tbPaciente;
+        private MetroFramework.Controls.MetroTabPage tbPersona;
         private MetroFramework.Controls.MetroTabControl tbMenu;
         private System.Windows.Forms.TabPage tbConsultas;
         private MetroFramework.Controls.MetroTile mtAmpliacion;

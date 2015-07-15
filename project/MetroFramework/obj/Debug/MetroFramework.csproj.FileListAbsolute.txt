@@ -16,3 +16,11 @@ C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\MetroFramework\obj\Debug\Met
 C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\MetroFramework\obj\Debug\MetroFramework.csproj.GenerateResource.Cache
 C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\MetroFramework\obj\Debug\MetroFramework.dll
 C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\MetroFramework\obj\Debug\MetroFramework.pdb
+D:\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework\bin\Debug\MetroFramework.dll
+D:\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework\bin\Debug\MetroFramework.pdb
+D:\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework\obj\Debug\MetroFramework.Controls.MetroGrid.resources
+D:\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework\obj\Debug\MetroFramework.MetroMessageBoxControl.resources
+D:\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework\obj\Debug\MetroFramework.Properties.Resources.resources
+D:\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework\obj\Debug\MetroFramework.csproj.GenerateResource.Cache
+D:\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework\obj\Debug\MetroFramework.dll
+D:\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework\obj\Debug\MetroFramework.pdb

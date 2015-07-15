@@ -16,3 +16,12 @@ C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\Comunes.Logica\bin\Debug\Com
 C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\Comunes.Logica\obj\Debug\Comunes.Dominio.csprojResolveAssemblyReference.cache
 C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\Comunes.Logica\obj\Debug\Comunes.Logica.dll
 C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\Comunes.Logica\obj\Debug\Comunes.Logica.pdb
+D:\Users\Jefatura\Desktop\SISCSHARP\project\Comunes.Logica\bin\Debug\Comunes.Logica.dll
+D:\Users\Jefatura\Desktop\SISCSHARP\project\Comunes.Logica\bin\Debug\Comunes.Logica.pdb
+D:\Users\Jefatura\Desktop\SISCSHARP\project\Comunes.Logica\bin\Debug\Comunes.Datos.dll
+D:\Users\Jefatura\Desktop\SISCSHARP\project\Comunes.Logica\bin\Debug\Comunes.Entidades.dll
+D:\Users\Jefatura\Desktop\SISCSHARP\project\Comunes.Logica\bin\Debug\Comunes.Datos.pdb
+D:\Users\Jefatura\Desktop\SISCSHARP\project\Comunes.Logica\bin\Debug\Comunes.Entidades.pdb
+D:\Users\Jefatura\Desktop\SISCSHARP\project\Comunes.Logica\obj\Debug\Comunes.Dominio.csprojResolveAssemblyReference.cache
+D:\Users\Jefatura\Desktop\SISCSHARP\project\Comunes.Logica\obj\Debug\Comunes.Logica.dll
+D:\Users\Jefatura\Desktop\SISCSHARP\project\Comunes.Logica\obj\Debug\Comunes.Logica.pdb

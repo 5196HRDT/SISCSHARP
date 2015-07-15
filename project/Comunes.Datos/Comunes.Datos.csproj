@@ -42,7 +42,7 @@
   <ItemGroup>
     <Compile Include="Cie10Dao.cs" />
     <Compile Include="Conexion.cs" />
-    <Compile Include="PacienteDao.cs" />
+    <Compile Include="PersonaDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsuarioDao.cs" />
   </ItemGroup>
@@ -50,6 +50,10 @@
     <ProjectReference Include="..\Comunes.Entidades\Comunes.Entidades.csproj">
       <Project>{1730f5e1-9c22-4246-a96d-74b9db5bf03c}</Project>
       <Name>Comunes.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Comunes.Utilitarios\Comunes.Utilitarios.csproj">
+      <Project>{eabba527-8e20-4350-999c-7f56a3aac8a3}</Project>
+      <Name>Comunes.Utilitarios</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

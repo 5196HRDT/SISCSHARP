@@ -21,5 +21,11 @@ namespace SeguroIntegral.Escritorio
             frmConsultaCobertura Cobertura = new frmConsultaCobertura();
             Cobertura.Show();
         }
+
+        private void mtAmpliacion_Click(object sender, EventArgs e)
+        {
+            frmCobertura Ampliacaion = new frmCobertura();
+            Ampliacaion.Show();
+        }
     }
 }

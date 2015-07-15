@@ -1,0 +1,17 @@
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\SeguroIntegral.Dominio.dll
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\SeguroIntegral.Dominio.pdb
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\Cobertura.Datos.dll
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\Cobertura.Entidades.dll
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\SeguroIntegral.Entidades.dll
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\SeguroIntegralDao.dll
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\Comunes.Datos.dll
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\Comunes.Entidades.dll
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\Cobertura.Datos.pdb
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\Cobertura.Entidades.pdb
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\SeguroIntegral.Entidades.pdb
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\SeguroIntegralDao.pdb
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\Comunes.Datos.pdb
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\Comunes.Entidades.pdb
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\obj\Debug\SeguroIntegral.Dominio.csprojResolveAssemblyReference.cache
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\obj\Debug\SeguroIntegral.Dominio.dll
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\obj\Debug\SeguroIntegral.Dominio.pdb

@@ -22,16 +22,15 @@ namespace Comunes.Datos
                     con = new SqlConnection();
                 }
                 con.ConnectionString = "Server=ServidorSQL;database=dbCaja;UID=sa; password=hrdt2003; Connection Timeout=30";
-                //con.ConnectionString = "Server=.;database=dbCaja;integrated security=true";
+                
                 if (con.State == ConnectionState.Closed)
                 {
                     con.Open();
                 }
-
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                throw;
+                throw e;
             }
             return con;
         }

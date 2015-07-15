@@ -48,7 +48,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lblMessage);
             this.Name = "TaskWindowControl";
-            this.Size = new System.Drawing.Size(414, 155);
+            this.Size = new System.Drawing.Size(329, 117);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -56,7 +56,7 @@
 
         #endregion
 
-        private MetroFramework.Controls.MetroLabel lblMensaje;
+     
         private MetroFramework.Controls.MetroLabel lblMessage;
 
     }

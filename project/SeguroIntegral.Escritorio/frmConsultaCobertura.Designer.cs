@@ -109,7 +109,7 @@
             this.Controls.Add(this.metroButton1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmConsultaCobertura";
-            this.Text = "CONSULTA - COBERTURA PACIENTE";
+            this.Text = "CONSULTA - COBERTURA Persona";
             this.ResumeLayout(false);
             this.PerformLayout();
 

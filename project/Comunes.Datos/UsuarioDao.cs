@@ -8,21 +8,20 @@ using System.Data.SqlClient;
 
 namespace Comunes.Datos
 {
-    public class UsuarioDao
+    public class UsuarioDao 
     {
         private static UsuarioDao _instancia;
-        private UsuarioDao() { }
-      
-        public static UsuarioDao instancia()
-        {
-            if (_instancia == null) _instancia = new UsuarioDao();
-            return _instancia;
-        }
-
+        private UsuarioDao(){ }
+          public static UsuarioDao instancia()
+          {
+              if (_instancia == null) _instancia = new UsuarioDao();
+              return _instancia;
+          }
+          
+          
         protected SqlCommand cmd;
         protected SqlDataReader dr;
-        
-        
+      
         public Usuario validar(string iniciales, string clave)
         {
             Usuario objUsuario=null;

@@ -1,0 +1,11 @@
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegralDao\bin\Debug\SeguroIntegralDao.dll
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegralDao\bin\Debug\SeguroIntegralDao.pdb
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegralDao\bin\Debug\Comunes.Datos.dll
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegralDao\bin\Debug\Comunes.Entidades.dll
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegralDao\bin\Debug\SeguroIntegral.Entidades.dll
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegralDao\bin\Debug\Comunes.Datos.pdb
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegralDao\bin\Debug\Comunes.Entidades.pdb
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegralDao\bin\Debug\SeguroIntegral.Entidades.pdb
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegralDao\obj\Debug\SeguroIntegral.Datos.csprojResolveAssemblyReference.cache
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegralDao\obj\Debug\SeguroIntegralDao.dll
+D:\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegralDao\obj\Debug\SeguroIntegralDao.pdb

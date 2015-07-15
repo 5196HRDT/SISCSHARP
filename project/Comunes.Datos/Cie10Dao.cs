@@ -34,13 +34,9 @@ namespace Comunes.Datos
                 Cie10 objCie10 = null;
                 while (dr.Read()) {
                     objCie10 = new Cie10();
-                    objCie10.idCie10 = (int)dr["idCie10"];
+                    objCie10.id = (int)dr["idCie10"];
                     objCie10.codigo = dr["codigo"].ToString();
-                    objCie10.descripcion = dr["descripcion"].ToString();
-                    objCie10.clase1 = dr["clase1"].ToString();
-                    objCie10.clase2 = dr["clase2"].ToString();
-                    objCie10.edadMinima = (int)dr["MinEdad"];
-                    objCie10.edadMaxima=(int)dr["MaxEdad"];
+                    objCie10.descripcion = dr["descripcion"].ToString();                    
                     lstCie10.Add(objCie10);
                 }
             }

@@ -16,11 +16,11 @@ namespace Comunes.Dominio
             if (_instancia == null) _instancia = new GestorComun();
             return _instancia;
         }
-        public Paciente obtenerPaciente(decimal nroHistoria)
+        public Persona obtenerPersona(decimal nroHistoria)
         {
             try
             {
-                return PacienteDao.instancia().obtenerPersona(nroHistoria);
+                return PersonaDao.instancia().obtenerPersona(nroHistoria);
             }
             catch (Exception e)
             {   
@@ -31,8 +31,8 @@ namespace Comunes.Dominio
         {
             try
             {
-            
-                return UsuarioDao.instancia().validar(iniciales,clave);
+                return UsuarioDao.instancia().validar(iniciales, clave);
+
             }
             catch (Exception e)
             {

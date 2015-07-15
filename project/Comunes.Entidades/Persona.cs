@@ -13,13 +13,21 @@ namespace Comunes.Entidades
         public string aMaterno { get; set; }
         public string nombres { get; set; }
         public string sexo { get; set; }
-        public DateTime fechaNacimiento { get; set; }
-        public string departamento { get; set; }
-        public string provincia { get; set; }
-        public string distrito { get; set; }
-        public char activo { get; set; }
-        public string ubigeo { get; set; }
+        public DateTime fechaNacimiento { get; set; }        
+        public Ubigeo objUbigeoDocumento { get; set; }
+        public string direccion { get; set; }
+        public string telefono { get; set; }
+        public string celular { get; set; }
+        public string correo { get; set; }
+        public string etnia { get; set; }
         public DateTime fechaRegistro { get; set; }
-        //public TipoDocumento objTipoDocumento { get; set; }
+        public bool activo { get; set; }
+        public string nroHistoria { get; set; }
+
+        public override string ToString()
+        {
+            return this.nombres;  //this will be shown in grid as address
+        }
+      
     }
 }
