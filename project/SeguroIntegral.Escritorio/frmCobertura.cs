@@ -3,11 +3,12 @@ using System.Drawing;
 using System.Globalization;
 using System.Windows.Forms;
 using MetroFramework.Forms;
+using MetroFramework;
 using System.Data;
 using System.Collections.Generic;
 using SeguroIntegral.Dominio;
 using SeguroIntegral.Entidades;
-
+using Cobertura.Entidades;
 
 namespace SeguroIntegral.Escritorio
 {
@@ -17,18 +18,24 @@ namespace SeguroIntegral.Escritorio
         {
             InitializeComponent();
         }
-
+        private List<Ampliaciones> lst;
+        private ListViewItem Fila;
         private void frmCobertura_Load(object sender, EventArgs e)
         {
-            
-            List<Formato> lst = GestorSeguroIntegral.instancia().ListarFormatos("", "");
-            
-            gvFormatos.AutoGenerateColumns = false;
-            gvFormatos.DataSource = lst;
-            
 
-            gvFormatos.Font = new Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point);
-            gvConsumo.Font = new Font("Segoe UI",9.0F, FontStyle.Bold, GraphicsUnit.Point);
+            lst = GestorSeguroIntegral.instancia().ListarAmpliacion("");
+            for (int i = 0; i < lst.Count; i++)
+            {
+                Fila = new ListViewItem();
+                Fila = lvAmpliaciones.Items.Add(lst[i].idAmpliacion.ToString());
+                Fila.SubItems.Add(lst[i].objFormato.idFormato.ToString());
+                Fila.SubItems.Add(lst[i].objFormato.numero);
+                Fila.SubItems.Add(lst[i].objPersona.nombres);
+                Fila.SubItems.Add(lst[i].fechaSolicitud.ToShortDateString());
+                Fila.SubItems.Add(lst[i].monto.ToString("#.00"));
+                Fila.SubItems.Add(lst[i].observacion);
+                Fila.SubItems.Add(lst[i].activo.ToString());
+             }
             
 
 
@@ -39,5 +46,7 @@ namespace SeguroIntegral.Escritorio
         {
             MetroTaskWindow.ShowTaskWindow(new Form(),"Titulo", new TaskWindowControl(), 10);
         }
+
+      
     }
 }

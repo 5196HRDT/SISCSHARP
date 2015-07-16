@@ -24,10 +24,7 @@ namespace Comunes.Entidades
         public bool activo { get; set; }
         public string nroHistoria { get; set; }
 
-        public override string ToString()
-        {
-            return this.nombres;  //this will be shown in grid as address
-        }
+       
       
     }
 }

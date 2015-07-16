@@ -47,10 +47,10 @@
             this.tbPersona.Location = new System.Drawing.Point(4, 44);
             this.tbPersona.Name = "tbPersona";
             this.tbPersona.Padding = new System.Windows.Forms.Padding(35);
-            this.tbPersona.Size = new System.Drawing.Size(1102, 578);
+            this.tbPersona.Size = new System.Drawing.Size(912, 514);
             this.tbPersona.Style = MetroFramework.MetroColorStyle.Teal;
             this.tbPersona.TabIndex = 1;
-            this.tbPersona.Text = "Persona";
+            this.tbPersona.Text = "Paciente";
             this.tbPersona.VerticalScrollbarBarColor = true;
             this.tbPersona.VerticalScrollbarHighlightOnWheel = false;
             this.tbPersona.VerticalScrollbarSize = 10;
@@ -62,12 +62,12 @@
             this.mtAmpliacion.AutoSize = true;
             this.mtAmpliacion.Location = new System.Drawing.Point(20, 38);
             this.mtAmpliacion.Name = "mtAmpliacion";
-            this.mtAmpliacion.Size = new System.Drawing.Size(217, 167);
+            this.mtAmpliacion.Size = new System.Drawing.Size(216, 172);
             this.mtAmpliacion.Style = MetroFramework.MetroColorStyle.Teal;
             this.mtAmpliacion.TabIndex = 2;
             this.mtAmpliacion.Text = "&Ampliación Cobertura";
             this.mtAmpliacion.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.mtAmpliacion.TileImage = global::SeguroIntegral.Escritorio.Properties.Resources.Edit;
+            this.mtAmpliacion.TileImage = global::SeguroIntegral.Escritorio.Properties.Resources.document;
             this.mtAmpliacion.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.mtAmpliacion.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.mtAmpliacion.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
@@ -85,8 +85,8 @@
             this.tbMenu.FontWeight = MetroFramework.MetroTabControlWeight.Bold;
             this.tbMenu.Location = new System.Drawing.Point(20, 60);
             this.tbMenu.Name = "tbMenu";
-            this.tbMenu.SelectedIndex = 0;
-            this.tbMenu.Size = new System.Drawing.Size(1110, 626);
+            this.tbMenu.SelectedIndex = 1;
+            this.tbMenu.Size = new System.Drawing.Size(920, 562);
             this.tbMenu.Style = MetroFramework.MetroColorStyle.Teal;
             this.tbMenu.TabIndex = 0;
             this.tbMenu.UseSelectable = true;
@@ -97,7 +97,7 @@
             this.tbConsultas.Location = new System.Drawing.Point(4, 44);
             this.tbConsultas.Name = "tbConsultas";
             this.tbConsultas.Padding = new System.Windows.Forms.Padding(35);
-            this.tbConsultas.Size = new System.Drawing.Size(1102, 578);
+            this.tbConsultas.Size = new System.Drawing.Size(912, 514);
             this.tbConsultas.TabIndex = 2;
             this.tbConsultas.Text = "Consultas";
             // 
@@ -106,16 +106,17 @@
             this.mtAltoCosto.ActiveControl = null;
             this.mtAltoCosto.Location = new System.Drawing.Point(20, 38);
             this.mtAltoCosto.Name = "mtAltoCosto";
-            this.mtAltoCosto.Size = new System.Drawing.Size(217, 167);
-            this.mtAltoCosto.Style = MetroFramework.MetroColorStyle.Silver;
+            this.mtAltoCosto.Size = new System.Drawing.Size(216, 173);
+            this.mtAltoCosto.Style = MetroFramework.MetroColorStyle.Lime;
             this.mtAltoCosto.TabIndex = 0;
             this.mtAltoCosto.Text = "Persona Alto Costo";
             this.mtAltoCosto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.mtAltoCosto.TileImage = global::SeguroIntegral.Escritorio.Properties.Resources.Dollar128;
+            this.mtAltoCosto.TileImage = global::SeguroIntegral.Escritorio.Properties.Resources.money;
             this.mtAltoCosto.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.mtAltoCosto.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.mtAltoCosto.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.mtAltoCosto.UseSelectable = true;
+            this.mtAltoCosto.UseStyleColors = true;
             this.mtAltoCosto.UseTileImage = true;
             this.mtAltoCosto.Click += new System.EventHandler(this.mtAltoCosto_Click);
             // 
@@ -127,7 +128,7 @@
             this.BackImage = global::SeguroIntegral.Escritorio.Properties.Resources.GitHub_Mark;
             this.BackImagePadding = new System.Windows.Forms.Padding(450, 10, 0, 0);
             this.BackMaxSize = 50;
-            this.ClientSize = new System.Drawing.Size(1150, 706);
+            this.ClientSize = new System.Drawing.Size(960, 642);
             this.Controls.Add(this.tbMenu);
             this.Name = "frmMenu";
             this.Style = MetroFramework.MetroColorStyle.Teal;

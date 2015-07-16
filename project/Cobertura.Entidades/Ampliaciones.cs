@@ -14,7 +14,7 @@ namespace Cobertura.Entidades
         public Formato objFormato { get; set; }
         public DateTime fechaSolicitud { get; set; }
         public DateTime fechaAprobada { get; set; }
-        public Double monto { get; set; }
+        public decimal monto { get; set; }
         public string observacion { get; set; }
         public bool activo { get; set; }
     }

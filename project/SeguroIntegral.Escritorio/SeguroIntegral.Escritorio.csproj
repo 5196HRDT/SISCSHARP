@@ -176,6 +176,27 @@
   <ItemGroup>
     <None Include="bin\Debug\Recursos\Dollar128.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Recursos\document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Recursos\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Recursos\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Recursos\print.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Recursos\new.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Recursos\close.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Recursos\save.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
