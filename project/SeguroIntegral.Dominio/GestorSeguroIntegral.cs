@@ -28,6 +28,18 @@ namespace SeguroIntegral.Dominio
             }
         }
 
+        public Formato ObtenerFormato(int idFormato)
+        {
+            try
+            {
+                return FormatoDao.instancia().ObtenerFormato(idFormato);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
         public Formato ObtenerFormato(string lote, string numero)
         {
             try
@@ -36,22 +48,55 @@ namespace SeguroIntegral.Dominio
             }
             catch (Exception e)
             {
-
                 throw e;
             }
         }
 
-        public List<Ampliaciones> ListarAmpliacion(string formato)
+        public int GuardarAmpliacion(Ampliaciones objAmpliacion)
+        {
+            if (objAmpliacion.idAmpliacion == 0)
+            {
+                if (objAmpliacion.objFormato.idFormato == 0 && (objAmpliacion.fechaSolicitud> objAmpliacion.fechaSolicitud)) return 0;
+                return AmpliacionDao.instancia().Ingresar(objAmpliacion);
+            }
+            else {
+                return AmpliacionDao.instancia().Modificar(objAmpliacion); ;
+            }
+        } 
+
+        public Ampliaciones ObternerAmpliacion(int id) {
+            try
+            {
+                return AmpliacionDao.instancia().ObtenerAmpliacion(id);
+            }
+            catch (Exception e)
+            {
+                
+                throw e;
+            }
+        }
+        public List<Ampliaciones> ListarAmpliacion(string lote, string numero)
         {
             try
             {
-                return AmpliacionDao.instancia().ListarAmpliaciones(formato);
+                return AmpliacionDao.instancia().ListarAmpliaciones(lote,numero);
             }
             catch (Exception e)
             {
                 throw e;
             }
 
+        }
+        public List<Ampliaciones> ListarAmpliaciones(DateTime FechaI, DateTime FechaF)
+        {
+            try
+            {
+                return AmpliacionDao.instancia().ListarAmpliaciones(FechaI, FechaF);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
     }
 }

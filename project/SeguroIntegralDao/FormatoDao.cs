@@ -26,6 +26,41 @@ namespace SeguroIntegral.Datos
             dr.Close();
             cmd.Dispose();
         }
+
+        public Formato ObtenerFormato(int idFormato) {
+            Formato objFormato = null;
+            try
+            {
+                cmd = new SqlCommand("sp_FormartoListar");
+                cmd.Connection = Conexion.instancia().obtenerConexion();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@idformato", idFormato);
+                dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    objFormato = new Formato();
+                    objFormato.idFormato = (int)dr["idSis"];
+                    objFormato.hei = dr["hei"].ToString();
+                    objFormato.lote = dr["lote"].ToString();
+                    objFormato.numero = dr["numero"].ToString();
+                    objFormato.objPaciete = new Comunes.Entidades.Persona();
+                    objFormato.objPaciete.nroHistoria = dr["Historia"].ToString();
+                    objFormato.objPaciete.aPaterno = dr["APaterno"].ToString();
+                    objFormato.objPaciete.aMaterno = dr["AMaterno"].ToString();
+                    objFormato.objPaciete.nombres = dr["Nombres"].ToString();
+                    objFormato.montoMedicamento = (decimal)dr["TMedicamento"];
+                    objFormato.montoProcedimiento = (decimal)dr["TProcedimiento"];
+                    objFormato.TCobertura = (decimal)dr["TCobertura"];
+                    objFormato.montoOxigeno = 0;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { this.cerrar(); }
+            return objFormato;
+        }
         public Formato ObtenerFormato(string lote, string numero) {
             Formato objFormato = null;
             try
@@ -39,7 +74,9 @@ namespace SeguroIntegral.Datos
                 if (dr.Read()) {
                     objFormato = new Formato();
                     objFormato.idFormato = (int)dr["idSis"];
-                    objFormato.numero = dr["Formato"].ToString();
+                    objFormato.hei = dr["hei"].ToString();
+                    objFormato.lote = dr["lote"].ToString();
+                    objFormato.numero = dr["numero"].ToString();
                     objFormato.objPaciete = new Comunes.Entidades.Persona();
                     objFormato.objPaciete.nroHistoria = dr["Historia"].ToString();
                     objFormato.objPaciete.nombres = dr["Paciente"].ToString();
@@ -70,6 +107,7 @@ namespace SeguroIntegral.Datos
                     objFormato.numero = dr["Formato"].ToString();
                     objFormato.objPaciete = new Comunes.Entidades.Persona();
                     objFormato.objPaciete.nombres = dr["Paciente"].ToString();
+                    objFormato.objPaciete.nroHistoria = dr["Historia"].ToString();
                     lstFormatos.Add(objFormato);
                 }
             }

@@ -20,6 +20,11 @@ namespace SeguroIntegral.Entidades
         public DateTime FechaVencimiento { get; set; }
         public DateTime FechaAlta { get; set; }
         public Persona objPaciete { get; set; }
+        //CONSOLIDADO
+        public decimal montoMedicamento { get; set; }
+        public decimal montoProcedimiento { get; set; }
+        public decimal montoOxigeno { get; set; }
+        public decimal TCobertura { get; set; }
         
     }
 }

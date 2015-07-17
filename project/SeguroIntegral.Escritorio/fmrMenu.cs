@@ -14,6 +14,7 @@ namespace SeguroIntegral.Escritorio
         public frmMenu()
         {
             InitializeComponent();
+            this.mtAltoCosto.Visible = false;
         }
 
         private void mtAltoCosto_Click(object sender, EventArgs e)
