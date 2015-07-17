@@ -116,3 +116,15 @@ C:\Users\Sistemas\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\
 C:\Users\Sistemas\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.Properties.Resources.resources
 C:\Users\Sistemas\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.TaskWindowControl.resources
 C:\Users\Sistemas\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.csproj.GenerateResource.Cache
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\Cobertura.Entidades.dll
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\Derivacion.Logica.dll
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\SeguroIntegral.Dominio.dll
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\SeguroIntegral.Entidades.dll
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\SeguroIntegralDao.dll
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\Cobertura.Datos.dll
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\Cobertura.Entidades.pdb
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\Derivacion.Logica.pdb
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\SeguroIntegral.Dominio.pdb
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\SeguroIntegral.Entidades.pdb
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\SeguroIntegralDao.pdb
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\Cobertura.Datos.pdb

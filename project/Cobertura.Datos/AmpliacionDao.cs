@@ -42,8 +42,7 @@ namespace Cobertura.Datos
                     objAmpliacion.idAmpliacion = (int)dr["IdCobertura"];
                     objAmpliacion.codigo = dr["codigo"].ToString();
                     objAmpliacion.objFormato = new SeguroIntegral.Entidades.Formato();
-                    objAmpliacion.objFormato.idFormato = (int)dr["idSis"];
-                    
+                    objAmpliacion.objFormato.idFormato = (int)dr["idSis"];                    
                     objAmpliacion.objFormato.numero =  dr["lote"].ToString() + '-'+ dr["numero"].ToString();
                     objAmpliacion.objPersona = new Persona();
                     objAmpliacion.objPersona.nombres = dr["Paciente"].ToString();

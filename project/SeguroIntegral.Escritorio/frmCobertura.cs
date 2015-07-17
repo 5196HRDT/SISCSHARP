@@ -19,11 +19,13 @@ namespace SeguroIntegral.Escritorio
             InitializeComponent();
         }
         private List<Ampliaciones> lst;
+        private Formato objFormato;
         private ListViewItem Fila;
+        private GestorSeguroIntegral GestorSeguro = GestorSeguroIntegral.instancia();
         private void frmCobertura_Load(object sender, EventArgs e)
         {
 
-            lst = GestorSeguroIntegral.instancia().ListarAmpliacion("");
+            lst = GestorSeguro.ListarAmpliacion("");
             for (int i = 0; i < lst.Count; i++)
             {
                 Fila = new ListViewItem();
@@ -33,8 +35,7 @@ namespace SeguroIntegral.Escritorio
                 Fila.SubItems.Add(lst[i].objPersona.nombres);
                 Fila.SubItems.Add(lst[i].fechaSolicitud.ToShortDateString());
                 Fila.SubItems.Add(lst[i].monto.ToString("#.00"));
-                Fila.SubItems.Add(lst[i].observacion);
-                Fila.SubItems.Add(lst[i].activo.ToString());
+                Fila.SubItems.Add(lst[i].observacion);                
              }
             
 
@@ -45,6 +46,20 @@ namespace SeguroIntegral.Escritorio
         private void metroButton1_Click(object sender, EventArgs e)
         {
             MetroTaskWindow.ShowTaskWindow(new Form(),"Titulo", new TaskWindowControl(), 10);
+        }
+
+        private void txtNFormato_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) {
+
+                objFormato = GestorSeguro.ObtenerFormato(txtLoteFormato.Text.Trim(), txtNFormato.Text.Trim());
+                lblSolicitud.Text= string.Concat(lblSolicitud.Text, objFormato.objPaciete.nombres);
+            }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+
         }
 
       

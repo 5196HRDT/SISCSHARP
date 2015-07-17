@@ -26,6 +26,32 @@ namespace SeguroIntegral.Datos
             dr.Close();
             cmd.Dispose();
         }
+        public Formato ObtenerFormato(string lote, string numero) {
+            Formato objFormato = null;
+            try
+            {
+                cmd = new SqlCommand("sp_FormatoSisListarNro");
+                cmd.Connection = Conexion.instancia().obtenerConexion();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@lote", lote);
+                cmd.Parameters.AddWithValue("@numero", numero);
+                dr = cmd.ExecuteReader();
+                if (dr.Read()) {
+                    objFormato = new Formato();
+                    objFormato.idFormato = (int)dr["idSis"];
+                    objFormato.numero = dr["Formato"].ToString();
+                    objFormato.objPaciete = new Comunes.Entidades.Persona();
+                    objFormato.objPaciete.nroHistoria = dr["Historia"].ToString();
+                    objFormato.objPaciete.nombres = dr["Paciente"].ToString();
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { this.cerrar(); }
+            return objFormato;
+        }
         public List<Formato> ListarFormato(string lote, string numero) {
             List<Formato> lstFormatos = null;
             try
@@ -49,7 +75,6 @@ namespace SeguroIntegral.Datos
             }
             catch (Exception e)
             {
-
                 throw e;
             }
             finally { this.cerrar(); }

@@ -30,3 +30,5 @@ C:\Users\Sistemas\Desktop\SISCSHARP\project\Comunes.Datos\bin\Debug\Comunes.Util
 C:\Users\Sistemas\Desktop\SISCSHARP\project\Comunes.Datos\obj\Debug\Comunes.Datos.csprojResolveAssemblyReference.cache
 C:\Users\Sistemas\Desktop\SISCSHARP\project\Comunes.Datos\obj\Debug\Comunes.Datos.dll
 C:\Users\Sistemas\Desktop\SISCSHARP\project\Comunes.Datos\obj\Debug\Comunes.Datos.pdb
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\Comunes.Datos\bin\Debug\Comunes.Utilitarios.dll
+C:\Users\ChristiamAlberth\Desktop\SISCSHARP\project\Comunes.Datos\bin\Debug\Comunes.Utilitarios.pdb

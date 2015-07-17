@@ -16,10 +16,23 @@ namespace SeguroIntegral.Dominio
             if (_instancia == null) _instancia = new GestorSeguroIntegral();
             return _instancia;
         }
-        public List<Formato> ListarFormatos(string lote, string numero) {
+        public List<Formato>ListarFormato(string lote, string numero) {
             try
             {
                 return FormatoDao.instancia().ListarFormato(lote,numero);
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
+        }
+
+        public Formato ObtenerFormato(string lote, string numero)
+        {
+            try
+            {
+                return FormatoDao.instancia().ObtenerFormato(lote, numero);
             }
             catch (Exception e)
             {

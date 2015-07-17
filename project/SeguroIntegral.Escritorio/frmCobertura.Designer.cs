@@ -39,10 +39,11 @@
             this.idCobertura = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.idSis = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Formato = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Paciente = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Fecha = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Monto = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Diagnosticos = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.pSolicitud = new MetroFramework.Controls.MetroPanel();
             this.lblMRestante = new System.Windows.Forms.Label();
             this.lblMCobertura = new System.Windows.Forms.Label();
             this.lblMAmpliaciones = new System.Windows.Forms.Label();
@@ -52,7 +53,8 @@
             this.lblMFormato = new System.Windows.Forms.Label();
             this.lblMMedicamento = new System.Windows.Forms.Label();
             this.lblComentario = new System.Windows.Forms.Label();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
+            this.btnCancelar = new MetroFramework.Controls.MetroButton();
+            this.btnSalir = new MetroFramework.Controls.MetroButton();
             this.btnGrabar = new MetroFramework.Controls.MetroButton();
             this.metroLabel17 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel16 = new MetroFramework.Controls.MetroLabel();
@@ -64,20 +66,21 @@
             this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel19 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.dptFechaAp = new MetroFramework.Controls.MetroDateTime();
             this.dtpFecha = new MetroFramework.Controls.MetroDateTime();
-            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
+            this.txtDiagnosticos = new MetroFramework.Controls.MetroTextBox();
+            this.txtLoteFormato = new MetroFramework.Controls.MetroTextBox();
+            this.txtNFormato = new MetroFramework.Controls.MetroTextBox();
             this.txtMonto = new MetroFramework.Controls.MetroTextBox();
             this.txtNSolicitud = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            this.lblSolicitud = new MetroFramework.Controls.MetroLabel();
             this.btnNuevo = new MetroFramework.Controls.MetroButton();
-            this.Activo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Paciente = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.metroPanel1.SuspendLayout();
+            this.pSolicitud.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -112,9 +115,9 @@
             this.btnImprimir.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnImprimir.Location = new System.Drawing.Point(154, 129);
             this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(105, 32);
-            this.btnImprimir.TabIndex = 2;
-            this.btnImprimir.Text = "IMPRIMIR";
+            this.btnImprimir.Size = new System.Drawing.Size(118, 32);
+            this.btnImprimir.TabIndex = 5;
+            this.btnImprimir.Text = "&IMPRIMIR";
             this.btnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnImprimir.UseSelectable = true;
             // 
@@ -147,7 +150,7 @@
             this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 29);
             this.metroDateTime1.Name = "metroDateTime1";
             this.metroDateTime1.Size = new System.Drawing.Size(114, 29);
-            this.metroDateTime1.TabIndex = 4;
+            this.metroDateTime1.TabIndex = 2;
             // 
             // metroDateTime2
             // 
@@ -156,7 +159,7 @@
             this.metroDateTime2.MinimumSize = new System.Drawing.Size(0, 29);
             this.metroDateTime2.Name = "metroDateTime2";
             this.metroDateTime2.Size = new System.Drawing.Size(114, 29);
-            this.metroDateTime2.TabIndex = 4;
+            this.metroDateTime2.TabIndex = 3;
             // 
             // lvAmpliaciones
             // 
@@ -169,19 +172,21 @@
             this.Paciente,
             this.Fecha,
             this.Monto,
-            this.Diagnosticos,
-            this.Activo});
+            this.Diagnosticos});
+            this.lvAmpliaciones.FullRowSelect = true;
+            this.lvAmpliaciones.GridLines = true;
             this.lvAmpliaciones.Location = new System.Drawing.Point(20, 183);
+            this.lvAmpliaciones.MultiSelect = false;
             this.lvAmpliaciones.Name = "lvAmpliaciones";
-            this.lvAmpliaciones.Size = new System.Drawing.Size(679, 436);
-            this.lvAmpliaciones.TabIndex = 5;
+            this.lvAmpliaciones.Size = new System.Drawing.Size(679, 509);
+            this.lvAmpliaciones.TabIndex = 6;
             this.lvAmpliaciones.UseCompatibleStateImageBehavior = false;
             this.lvAmpliaciones.View = System.Windows.Forms.View.Details;
             // 
             // idCobertura
             // 
             this.idCobertura.Text = "ID";
-            this.idCobertura.Width = 10;
+            this.idCobertura.Width = 11;
             // 
             // idSis
             // 
@@ -193,6 +198,11 @@
             // 
             this.Formato.Text = "Formato";
             this.Formato.Width = 86;
+            // 
+            // Paciente
+            // 
+            this.Paciente.Text = "Paciente";
+            this.Paciente.Width = 170;
             // 
             // Fecha
             // 
@@ -207,137 +217,149 @@
             // Diagnosticos
             // 
             this.Diagnosticos.Text = "Diagnosticos";
-            this.Diagnosticos.Width = 156;
+            this.Diagnosticos.Width = 187;
             // 
-            // metroPanel1
+            // pSolicitud
             // 
-            this.metroPanel1.Controls.Add(this.lblMRestante);
-            this.metroPanel1.Controls.Add(this.lblMCobertura);
-            this.metroPanel1.Controls.Add(this.lblMAmpliaciones);
-            this.metroPanel1.Controls.Add(this.lblTotal);
-            this.metroPanel1.Controls.Add(this.lblMOxigeno);
-            this.metroPanel1.Controls.Add(this.lblMProcedimiento);
-            this.metroPanel1.Controls.Add(this.lblMFormato);
-            this.metroPanel1.Controls.Add(this.lblMMedicamento);
-            this.metroPanel1.Controls.Add(this.lblComentario);
-            this.metroPanel1.Controls.Add(this.metroButton2);
-            this.metroPanel1.Controls.Add(this.btnGrabar);
-            this.metroPanel1.Controls.Add(this.metroLabel17);
-            this.metroPanel1.Controls.Add(this.metroLabel16);
-            this.metroPanel1.Controls.Add(this.metroLabel15);
-            this.metroPanel1.Controls.Add(this.metroLabel14);
-            this.metroPanel1.Controls.Add(this.metroLabel18);
-            this.metroPanel1.Controls.Add(this.metroLabel13);
-            this.metroPanel1.Controls.Add(this.metroLabel12);
-            this.metroPanel1.Controls.Add(this.metroLabel11);
-            this.metroPanel1.Controls.Add(this.metroLabel10);
-            this.metroPanel1.Controls.Add(this.metroLabel9);
-            this.metroPanel1.Controls.Add(this.metroLabel8);
-            this.metroPanel1.Controls.Add(this.metroLabel7);
-            this.metroPanel1.Controls.Add(this.dptFechaAp);
-            this.metroPanel1.Controls.Add(this.dtpFecha);
-            this.metroPanel1.Controls.Add(this.metroTextBox1);
-            this.metroPanel1.Controls.Add(this.txtMonto);
-            this.metroPanel1.Controls.Add(this.txtNSolicitud);
-            this.metroPanel1.Controls.Add(this.metroLabel6);
-            this.metroPanel1.Controls.Add(this.metroLabel5);
-            this.metroPanel1.Controls.Add(this.metroLabel4);
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(739, 76);
-            this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(481, 543);
-            this.metroPanel1.TabIndex = 6;
-            this.metroPanel1.VerticalScrollbarBarColor = true;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
+            this.pSolicitud.Controls.Add(this.lblMRestante);
+            this.pSolicitud.Controls.Add(this.lblMCobertura);
+            this.pSolicitud.Controls.Add(this.lblMAmpliaciones);
+            this.pSolicitud.Controls.Add(this.lblTotal);
+            this.pSolicitud.Controls.Add(this.lblMOxigeno);
+            this.pSolicitud.Controls.Add(this.lblMProcedimiento);
+            this.pSolicitud.Controls.Add(this.lblMFormato);
+            this.pSolicitud.Controls.Add(this.lblMMedicamento);
+            this.pSolicitud.Controls.Add(this.lblComentario);
+            this.pSolicitud.Controls.Add(this.btnCancelar);
+            this.pSolicitud.Controls.Add(this.btnSalir);
+            this.pSolicitud.Controls.Add(this.btnGrabar);
+            this.pSolicitud.Controls.Add(this.metroLabel17);
+            this.pSolicitud.Controls.Add(this.metroLabel16);
+            this.pSolicitud.Controls.Add(this.metroLabel15);
+            this.pSolicitud.Controls.Add(this.metroLabel14);
+            this.pSolicitud.Controls.Add(this.metroLabel18);
+            this.pSolicitud.Controls.Add(this.metroLabel13);
+            this.pSolicitud.Controls.Add(this.metroLabel12);
+            this.pSolicitud.Controls.Add(this.metroLabel11);
+            this.pSolicitud.Controls.Add(this.metroLabel10);
+            this.pSolicitud.Controls.Add(this.metroLabel9);
+            this.pSolicitud.Controls.Add(this.metroLabel19);
+            this.pSolicitud.Controls.Add(this.metroLabel8);
+            this.pSolicitud.Controls.Add(this.metroLabel7);
+            this.pSolicitud.Controls.Add(this.dptFechaAp);
+            this.pSolicitud.Controls.Add(this.dtpFecha);
+            this.pSolicitud.Controls.Add(this.txtDiagnosticos);
+            this.pSolicitud.Controls.Add(this.txtLoteFormato);
+            this.pSolicitud.Controls.Add(this.txtNFormato);
+            this.pSolicitud.Controls.Add(this.txtMonto);
+            this.pSolicitud.Controls.Add(this.txtNSolicitud);
+            this.pSolicitud.Controls.Add(this.metroLabel6);
+            this.pSolicitud.Controls.Add(this.metroLabel5);
+            this.pSolicitud.Controls.Add(this.lblSolicitud);
+            this.pSolicitud.HorizontalScrollbarBarColor = true;
+            this.pSolicitud.HorizontalScrollbarHighlightOnWheel = false;
+            this.pSolicitud.HorizontalScrollbarSize = 10;
+            this.pSolicitud.Location = new System.Drawing.Point(739, 76);
+            this.pSolicitud.Name = "pSolicitud";
+            this.pSolicitud.Size = new System.Drawing.Size(481, 616);
+            this.pSolicitud.TabIndex = 6;
+            this.pSolicitud.VerticalScrollbarBarColor = true;
+            this.pSolicitud.VerticalScrollbarHighlightOnWheel = false;
+            this.pSolicitud.VerticalScrollbarSize = 10;
             // 
             // lblMRestante
             // 
+            this.lblMRestante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.lblMRestante.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMRestante.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMRestante.Location = new System.Drawing.Point(369, 372);
+            this.lblMRestante.Location = new System.Drawing.Point(369, 400);
             this.lblMRestante.Name = "lblMRestante";
             this.lblMRestante.Size = new System.Drawing.Size(84, 29);
-            this.lblMRestante.TabIndex = 11;
+            this.lblMRestante.TabIndex = 22;
             this.lblMRestante.Text = "label1";
             this.lblMRestante.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMCobertura
             // 
+            this.lblMCobertura.BackColor = System.Drawing.Color.Wheat;
             this.lblMCobertura.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMCobertura.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMCobertura.Location = new System.Drawing.Point(369, 335);
+            this.lblMCobertura.Location = new System.Drawing.Point(369, 363);
             this.lblMCobertura.Name = "lblMCobertura";
             this.lblMCobertura.Size = new System.Drawing.Size(84, 29);
-            this.lblMCobertura.TabIndex = 11;
+            this.lblMCobertura.TabIndex = 21;
             this.lblMCobertura.Text = "label1";
             this.lblMCobertura.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMAmpliaciones
             // 
+            this.lblMAmpliaciones.BackColor = System.Drawing.Color.Gold;
             this.lblMAmpliaciones.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMAmpliaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMAmpliaciones.Location = new System.Drawing.Point(369, 297);
+            this.lblMAmpliaciones.Location = new System.Drawing.Point(369, 325);
             this.lblMAmpliaciones.Name = "lblMAmpliaciones";
             this.lblMAmpliaciones.Size = new System.Drawing.Size(84, 29);
-            this.lblMAmpliaciones.TabIndex = 11;
+            this.lblMAmpliaciones.TabIndex = 19;
             this.lblMAmpliaciones.Text = "label1";
             this.lblMAmpliaciones.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblTotal
             // 
+            this.lblTotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.lblTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(160, 372);
+            this.lblTotal.Location = new System.Drawing.Point(160, 400);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(84, 29);
-            this.lblTotal.TabIndex = 11;
+            this.lblTotal.TabIndex = 17;
             this.lblTotal.Text = "label1";
             this.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMOxigeno
             // 
+            this.lblMOxigeno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lblMOxigeno.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMOxigeno.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMOxigeno.Location = new System.Drawing.Point(160, 335);
+            this.lblMOxigeno.Location = new System.Drawing.Point(160, 363);
             this.lblMOxigeno.Name = "lblMOxigeno";
             this.lblMOxigeno.Size = new System.Drawing.Size(84, 29);
-            this.lblMOxigeno.TabIndex = 11;
+            this.lblMOxigeno.TabIndex = 16;
             this.lblMOxigeno.Text = "label1";
             this.lblMOxigeno.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMProcedimiento
             // 
+            this.lblMProcedimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.lblMProcedimiento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMProcedimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMProcedimiento.Location = new System.Drawing.Point(160, 297);
+            this.lblMProcedimiento.Location = new System.Drawing.Point(160, 325);
             this.lblMProcedimiento.Name = "lblMProcedimiento";
             this.lblMProcedimiento.Size = new System.Drawing.Size(84, 29);
-            this.lblMProcedimiento.TabIndex = 11;
+            this.lblMProcedimiento.TabIndex = 15;
             this.lblMProcedimiento.Text = "label1";
             this.lblMProcedimiento.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMFormato
             // 
+            this.lblMFormato.BackColor = System.Drawing.Color.SkyBlue;
             this.lblMFormato.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMFormato.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMFormato.Location = new System.Drawing.Point(369, 254);
+            this.lblMFormato.Location = new System.Drawing.Point(369, 282);
             this.lblMFormato.Name = "lblMFormato";
             this.lblMFormato.Size = new System.Drawing.Size(84, 29);
-            this.lblMFormato.TabIndex = 11;
+            this.lblMFormato.TabIndex = 18;
             this.lblMFormato.Text = "label1";
             this.lblMFormato.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMMedicamento
             // 
+            this.lblMMedicamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.lblMMedicamento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMMedicamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMMedicamento.Location = new System.Drawing.Point(160, 254);
+            this.lblMMedicamento.Location = new System.Drawing.Point(160, 282);
             this.lblMMedicamento.Name = "lblMMedicamento";
             this.lblMMedicamento.Size = new System.Drawing.Size(84, 29);
-            this.lblMMedicamento.TabIndex = 11;
+            this.lblMMedicamento.TabIndex = 15;
             this.lblMMedicamento.Text = "label1";
             this.lblMMedicamento.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -345,26 +367,41 @@
             // 
             this.lblComentario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblComentario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblComentario.Location = new System.Drawing.Point(14, 434);
+            this.lblComentario.Location = new System.Drawing.Point(14, 462);
             this.lblComentario.Name = "lblComentario";
             this.lblComentario.Size = new System.Drawing.Size(439, 96);
-            this.lblComentario.TabIndex = 11;
+            this.lblComentario.TabIndex = 23;
             this.lblComentario.Text = "label1";
             this.lblComentario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // metroButton2
+            // btnCancelar
             // 
-            this.metroButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.metroButton2.BackgroundImage = global::SeguroIntegral.Escritorio.Properties.Resources.close;
-            this.metroButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.metroButton2.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton2.Location = new System.Drawing.Point(334, 182);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(114, 32);
-            this.metroButton2.TabIndex = 7;
-            this.metroButton2.Text = "SALIR";
-            this.metroButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.metroButton2.UseSelectable = true;
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnCancelar.BackgroundImage = global::SeguroIntegral.Escritorio.Properties.Resources.cancel;
+            this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnCancelar.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.btnCancelar.Location = new System.Drawing.Point(333, 121);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(114, 32);
+            this.btnCancelar.TabIndex = 13;
+            this.btnCancelar.Text = "&CANCELAR";
+            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelar.UseSelectable = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnSalir.BackgroundImage = global::SeguroIntegral.Escritorio.Properties.Resources.close;
+            this.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnSalir.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.btnSalir.Location = new System.Drawing.Point(333, 195);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(114, 32);
+            this.btnSalir.TabIndex = 14;
+            this.btnSalir.Text = "&SALIR";
+            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSalir.UseSelectable = true;
             // 
             // btnGrabar
             // 
@@ -372,11 +409,11 @@
             this.btnGrabar.BackgroundImage = global::SeguroIntegral.Escritorio.Properties.Resources.save;
             this.btnGrabar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnGrabar.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.btnGrabar.Location = new System.Drawing.Point(16, 182);
+            this.btnGrabar.Location = new System.Drawing.Point(16, 195);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(115, 32);
-            this.btnGrabar.TabIndex = 7;
-            this.btnGrabar.Text = "GUARDAR";
+            this.btnGrabar.TabIndex = 12;
+            this.btnGrabar.Text = "&GUARDAR";
             this.btnGrabar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGrabar.UseSelectable = true;
             // 
@@ -384,7 +421,7 @@
             // 
             this.metroLabel17.AutoSize = true;
             this.metroLabel17.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel17.Location = new System.Drawing.Point(250, 372);
+            this.metroLabel17.Location = new System.Drawing.Point(250, 400);
             this.metroLabel17.Name = "metroLabel17";
             this.metroLabel17.Size = new System.Drawing.Size(88, 19);
             this.metroLabel17.TabIndex = 10;
@@ -395,7 +432,7 @@
             // 
             this.metroLabel16.AutoSize = true;
             this.metroLabel16.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel16.Location = new System.Drawing.Point(250, 341);
+            this.metroLabel16.Location = new System.Drawing.Point(250, 369);
             this.metroLabel16.Name = "metroLabel16";
             this.metroLabel16.Size = new System.Drawing.Size(114, 19);
             this.metroLabel16.TabIndex = 10;
@@ -406,7 +443,7 @@
             // 
             this.metroLabel15.AutoSize = true;
             this.metroLabel15.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel15.Location = new System.Drawing.Point(250, 303);
+            this.metroLabel15.Location = new System.Drawing.Point(250, 331);
             this.metroLabel15.Name = "metroLabel15";
             this.metroLabel15.Size = new System.Drawing.Size(121, 19);
             this.metroLabel15.TabIndex = 10;
@@ -417,7 +454,7 @@
             // 
             this.metroLabel14.AutoSize = true;
             this.metroLabel14.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel14.Location = new System.Drawing.Point(250, 260);
+            this.metroLabel14.Location = new System.Drawing.Point(250, 288);
             this.metroLabel14.Name = "metroLabel14";
             this.metroLabel14.Size = new System.Drawing.Size(113, 19);
             this.metroLabel14.TabIndex = 10;
@@ -428,7 +465,7 @@
             // 
             this.metroLabel18.AutoSize = true;
             this.metroLabel18.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel18.Location = new System.Drawing.Point(16, 406);
+            this.metroLabel18.Location = new System.Drawing.Point(16, 434);
             this.metroLabel18.Name = "metroLabel18";
             this.metroLabel18.Size = new System.Drawing.Size(88, 19);
             this.metroLabel18.TabIndex = 10;
@@ -439,7 +476,7 @@
             // 
             this.metroLabel13.AutoSize = true;
             this.metroLabel13.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel13.Location = new System.Drawing.Point(16, 372);
+            this.metroLabel13.Location = new System.Drawing.Point(16, 400);
             this.metroLabel13.Name = "metroLabel13";
             this.metroLabel13.Size = new System.Drawing.Size(64, 19);
             this.metroLabel13.TabIndex = 10;
@@ -450,7 +487,7 @@
             // 
             this.metroLabel12.AutoSize = true;
             this.metroLabel12.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel12.Location = new System.Drawing.Point(16, 341);
+            this.metroLabel12.Location = new System.Drawing.Point(16, 369);
             this.metroLabel12.Name = "metroLabel12";
             this.metroLabel12.Size = new System.Drawing.Size(103, 19);
             this.metroLabel12.TabIndex = 10;
@@ -461,7 +498,7 @@
             // 
             this.metroLabel11.AutoSize = true;
             this.metroLabel11.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel11.Location = new System.Drawing.Point(14, 303);
+            this.metroLabel11.Location = new System.Drawing.Point(14, 331);
             this.metroLabel11.Name = "metroLabel11";
             this.metroLabel11.Size = new System.Drawing.Size(145, 19);
             this.metroLabel11.TabIndex = 10;
@@ -472,7 +509,7 @@
             // 
             this.metroLabel10.AutoSize = true;
             this.metroLabel10.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel10.Location = new System.Drawing.Point(16, 260);
+            this.metroLabel10.Location = new System.Drawing.Point(16, 288);
             this.metroLabel10.Name = "metroLabel10";
             this.metroLabel10.Size = new System.Drawing.Size(138, 19);
             this.metroLabel10.TabIndex = 10;
@@ -483,12 +520,23 @@
             // 
             this.metroLabel9.AutoSize = true;
             this.metroLabel9.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel9.Location = new System.Drawing.Point(16, 129);
+            this.metroLabel9.Location = new System.Drawing.Point(16, 166);
             this.metroLabel9.Name = "metroLabel9";
             this.metroLabel9.Size = new System.Drawing.Size(94, 19);
             this.metroLabel9.TabIndex = 10;
             this.metroLabel9.Text = "Diagnosticos";
             this.metroLabel9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // metroLabel19
+            // 
+            this.metroLabel19.AutoSize = true;
+            this.metroLabel19.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel19.Location = new System.Drawing.Point(16, 124);
+            this.metroLabel19.Name = "metroLabel19";
+            this.metroLabel19.Size = new System.Drawing.Size(66, 19);
+            this.metroLabel19.TabIndex = 10;
+            this.metroLabel19.Text = "Formato";
+            this.metroLabel19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // metroLabel8
             // 
@@ -519,7 +567,7 @@
             this.dptFechaAp.MinimumSize = new System.Drawing.Size(0, 29);
             this.dptFechaAp.Name = "dptFechaAp";
             this.dptFechaAp.Size = new System.Drawing.Size(115, 29);
-            this.dptFechaAp.TabIndex = 9;
+            this.dptFechaAp.TabIndex = 10;
             // 
             // dtpFecha
             // 
@@ -528,21 +576,51 @@
             this.dtpFecha.MinimumSize = new System.Drawing.Size(0, 29);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(115, 29);
-            this.dtpFecha.TabIndex = 9;
+            this.dtpFecha.TabIndex = 8;
             // 
-            // metroTextBox1
+            // txtDiagnosticos
             // 
-            this.metroTextBox1.Lines = new string[0];
-            this.metroTextBox1.Location = new System.Drawing.Point(116, 129);
-            this.metroTextBox1.MaxLength = 32767;
-            this.metroTextBox1.Name = "metroTextBox1";
-            this.metroTextBox1.PasswordChar = '\0';
-            this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox1.SelectedText = "";
-            this.metroTextBox1.Size = new System.Drawing.Size(332, 23);
-            this.metroTextBox1.TabIndex = 8;
-            this.metroTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.metroTextBox1.UseSelectable = true;
+            this.txtDiagnosticos.Lines = new string[0];
+            this.txtDiagnosticos.Location = new System.Drawing.Point(116, 166);
+            this.txtDiagnosticos.MaxLength = 32767;
+            this.txtDiagnosticos.Name = "txtDiagnosticos";
+            this.txtDiagnosticos.PasswordChar = '\0';
+            this.txtDiagnosticos.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtDiagnosticos.SelectedText = "";
+            this.txtDiagnosticos.Size = new System.Drawing.Size(332, 23);
+            this.txtDiagnosticos.TabIndex = 12;
+            this.txtDiagnosticos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtDiagnosticos.UseSelectable = true;
+            // 
+            // txtLoteFormato
+            // 
+            this.txtLoteFormato.Lines = new string[0];
+            this.txtLoteFormato.Location = new System.Drawing.Point(114, 124);
+            this.txtLoteFormato.MaxLength = 2;
+            this.txtLoteFormato.Name = "txtLoteFormato";
+            this.txtLoteFormato.PasswordChar = '\0';
+            this.txtLoteFormato.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtLoteFormato.SelectedText = "";
+            this.txtLoteFormato.Size = new System.Drawing.Size(40, 23);
+            this.txtLoteFormato.TabIndex = 10;
+            this.txtLoteFormato.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtLoteFormato.UseSelectable = true;
+            this.txtLoteFormato.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNFormato_KeyDown);
+            // 
+            // txtNFormato
+            // 
+            this.txtNFormato.Lines = new string[0];
+            this.txtNFormato.Location = new System.Drawing.Point(152, 124);
+            this.txtNFormato.MaxLength = 8;
+            this.txtNFormato.Name = "txtNFormato";
+            this.txtNFormato.PasswordChar = '\0';
+            this.txtNFormato.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtNFormato.SelectedText = "";
+            this.txtNFormato.Size = new System.Drawing.Size(92, 23);
+            this.txtNFormato.TabIndex = 11;
+            this.txtNFormato.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtNFormato.UseSelectable = true;
+            this.txtNFormato.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNFormato_KeyDown);
             // 
             // txtMonto
             // 
@@ -554,7 +632,7 @@
             this.txtMonto.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtMonto.SelectedText = "";
             this.txtMonto.Size = new System.Drawing.Size(130, 23);
-            this.txtMonto.TabIndex = 8;
+            this.txtMonto.TabIndex = 9;
             this.txtMonto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtMonto.UseSelectable = true;
             // 
@@ -568,7 +646,7 @@
             this.txtNSolicitud.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtNSolicitud.SelectedText = "";
             this.txtNSolicitud.Size = new System.Drawing.Size(130, 23);
-            this.txtNSolicitud.TabIndex = 8;
+            this.txtNSolicitud.TabIndex = 7;
             this.txtNSolicitud.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtNSolicitud.UseSelectable = true;
             // 
@@ -594,15 +672,15 @@
             this.metroLabel5.Text = "Nª ";
             this.metroLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // metroLabel4
+            // lblSolicitud
             // 
-            this.metroLabel4.AutoSize = true;
-            this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel4.Location = new System.Drawing.Point(16, 10);
-            this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(176, 19);
-            this.metroLabel4.TabIndex = 7;
-            this.metroLabel4.Text = "Solicitud de Ampliacion: ";
+            this.lblSolicitud.AutoSize = true;
+            this.lblSolicitud.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.lblSolicitud.Location = new System.Drawing.Point(16, 10);
+            this.lblSolicitud.Name = "lblSolicitud";
+            this.lblSolicitud.Size = new System.Drawing.Size(93, 19);
+            this.lblSolicitud.TabIndex = 7;
+            this.lblSolicitud.Text = "Ampliacion: ";
             // 
             // btnNuevo
             // 
@@ -613,20 +691,10 @@
             this.btnNuevo.Location = new System.Drawing.Point(20, 129);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(100, 32);
-            this.btnNuevo.TabIndex = 2;
-            this.btnNuevo.Text = "NUEVO";
+            this.btnNuevo.TabIndex = 4;
+            this.btnNuevo.Text = "&NUEVO";
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevo.UseSelectable = true;
-            // 
-            // Activo
-            // 
-            this.Activo.Text = "Anulado";
-            this.Activo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Paciente
-            // 
-            this.Paciente.Text = "Paciente";
-            this.Paciente.Width = 170;
             // 
             // frmCobertura
             // 
@@ -635,8 +703,8 @@
             this.BackImage = global::SeguroIntegral.Escritorio.Properties.Resources.document;
             this.BackImagePadding = new System.Windows.Forms.Padding(350, 15, 0, 0);
             this.BackMaxSize = 45;
-            this.ClientSize = new System.Drawing.Size(1243, 645);
-            this.Controls.Add(this.metroPanel1);
+            this.ClientSize = new System.Drawing.Size(1243, 718);
+            this.Controls.Add(this.pSolicitud);
             this.Controls.Add(this.lvAmpliaciones);
             this.Controls.Add(this.metroDateTime2);
             this.Controls.Add(this.metroDateTime1);
@@ -649,8 +717,8 @@
             this.Name = "frmCobertura";
             this.Text = "AMPLIACIONES COBERTURA";
             this.Load += new System.EventHandler(this.frmCobertura_Load);
-            this.metroPanel1.ResumeLayout(false);
-            this.metroPanel1.PerformLayout();
+            this.pSolicitud.ResumeLayout(false);
+            this.pSolicitud.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -666,20 +734,20 @@
         private MetroFramework.Controls.MetroDateTime metroDateTime1;
         private MetroFramework.Controls.MetroDateTime metroDateTime2;
         private System.Windows.Forms.ListView lvAmpliaciones;
-        private MetroFramework.Controls.MetroPanel metroPanel1;
-        private MetroFramework.Controls.MetroLabel metroLabel4;
+        private MetroFramework.Controls.MetroPanel pSolicitud;
+        private MetroFramework.Controls.MetroLabel lblSolicitud;
         private MetroFramework.Controls.MetroLabel metroLabel9;
         private MetroFramework.Controls.MetroLabel metroLabel8;
         private MetroFramework.Controls.MetroLabel metroLabel7;
         private MetroFramework.Controls.MetroDateTime dptFechaAp;
         private MetroFramework.Controls.MetroDateTime dtpFecha;
-        private MetroFramework.Controls.MetroTextBox metroTextBox1;
+        private MetroFramework.Controls.MetroTextBox txtDiagnosticos;
         private MetroFramework.Controls.MetroTextBox txtMonto;
         private MetroFramework.Controls.MetroTextBox txtNSolicitud;
         private MetroFramework.Controls.MetroLabel metroLabel6;
         private MetroFramework.Controls.MetroLabel metroLabel5;
         private MetroFramework.Controls.MetroButton btnNuevo;
-        private MetroFramework.Controls.MetroButton metroButton2;
+        private MetroFramework.Controls.MetroButton btnSalir;
         private MetroFramework.Controls.MetroButton btnGrabar;
         private System.Windows.Forms.ColumnHeader idCobertura;
         private System.Windows.Forms.ColumnHeader idSis;
@@ -705,8 +773,11 @@
         private MetroFramework.Controls.MetroLabel metroLabel12;
         private MetroFramework.Controls.MetroLabel metroLabel11;
         private MetroFramework.Controls.MetroLabel metroLabel10;
-        private System.Windows.Forms.ColumnHeader Activo;
         private System.Windows.Forms.ColumnHeader Paciente;
+        private MetroFramework.Controls.MetroLabel metroLabel19;
+        private MetroFramework.Controls.MetroTextBox txtNFormato;
+        private MetroFramework.Controls.MetroTextBox txtLoteFormato;
+        private MetroFramework.Controls.MetroButton btnCancelar;
 
 
     }
