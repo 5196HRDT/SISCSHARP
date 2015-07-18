@@ -47,7 +47,7 @@
             this.tbPersona.Location = new System.Drawing.Point(4, 44);
             this.tbPersona.Name = "tbPersona";
             this.tbPersona.Padding = new System.Windows.Forms.Padding(35);
-            this.tbPersona.Size = new System.Drawing.Size(912, 514);
+            this.tbPersona.Size = new System.Drawing.Size(976, 572);
             this.tbPersona.Style = MetroFramework.MetroColorStyle.Teal;
             this.tbPersona.TabIndex = 1;
             this.tbPersona.Text = "Paciente";
@@ -85,8 +85,8 @@
             this.tbMenu.FontWeight = MetroFramework.MetroTabControlWeight.Bold;
             this.tbMenu.Location = new System.Drawing.Point(20, 60);
             this.tbMenu.Name = "tbMenu";
-            this.tbMenu.SelectedIndex = 0;
-            this.tbMenu.Size = new System.Drawing.Size(920, 562);
+            this.tbMenu.SelectedIndex = 1;
+            this.tbMenu.Size = new System.Drawing.Size(984, 620);
             this.tbMenu.Style = MetroFramework.MetroColorStyle.Teal;
             this.tbMenu.TabIndex = 0;
             this.tbMenu.UseSelectable = true;
@@ -98,7 +98,7 @@
             this.tbConsultas.Location = new System.Drawing.Point(4, 44);
             this.tbConsultas.Name = "tbConsultas";
             this.tbConsultas.Padding = new System.Windows.Forms.Padding(35);
-            this.tbConsultas.Size = new System.Drawing.Size(912, 514);
+            this.tbConsultas.Size = new System.Drawing.Size(976, 572);
             this.tbConsultas.TabIndex = 2;
             this.tbConsultas.Text = "Consultas";
             // 
@@ -129,11 +129,12 @@
             this.BackImage = global::SeguroIntegral.Escritorio.Properties.Resources.GitHub_Mark;
             this.BackImagePadding = new System.Windows.Forms.Padding(450, 10, 0, 0);
             this.BackMaxSize = 50;
-            this.ClientSize = new System.Drawing.Size(960, 642);
+            this.ClientSize = new System.Drawing.Size(1024, 700);
             this.Controls.Add(this.tbMenu);
             this.Name = "frmMenu";
             this.Style = MetroFramework.MetroColorStyle.Teal;
             this.Text = "SISTEMA SEGURO INTEGRAL DE SALUD";
+            this.Load += new System.EventHandler(this.frmMenu_Load);
             this.tbPersona.ResumeLayout(false);
             this.tbPersona.PerformLayout();
             this.tbMenu.ResumeLayout(false);

@@ -26,3 +26,10 @@ C:\Users\Sistemas\Desktop\SISCSHARP\project\MetroFramework.Fonts\bin\Debug\Metro
 C:\Users\Sistemas\Desktop\SISCSHARP\project\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.csprojResolveAssemblyReference.cache
 C:\Users\Sistemas\Desktop\SISCSHARP\project\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.dll
 C:\Users\Sistemas\Desktop\SISCSHARP\project\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.pdb
+C:\Users\SIS\Desktop\SISCSHARP\project\MetroFramework.Fonts\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\SIS\Desktop\SISCSHARP\project\MetroFramework.Fonts\bin\Debug\MetroFramework.Fonts.pdb
+C:\Users\SIS\Desktop\SISCSHARP\project\MetroFramework.Fonts\bin\Debug\MetroFramework.dll
+C:\Users\SIS\Desktop\SISCSHARP\project\MetroFramework.Fonts\bin\Debug\MetroFramework.pdb
+C:\Users\SIS\Desktop\SISCSHARP\project\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.csprojResolveAssemblyReference.cache
+C:\Users\SIS\Desktop\SISCSHARP\project\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.dll
+C:\Users\SIS\Desktop\SISCSHARP\project\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.pdb

@@ -27,7 +27,17 @@ namespace SeguroIntegral.Dominio
                 throw e;
             }
         }
-
+        public List<Ampliaciones> EstadoCuenta(DateTime FechaI, DateTime FechaF) {
+            try
+            {
+                return AmpliacionDao.instancia().EstadoCuentaPaciente(FechaI, FechaF);
+            }
+            catch (Exception e )
+            {
+                
+                throw e;
+            }
+        }
         public Formato ObtenerFormato(int idFormato)
         {
             try

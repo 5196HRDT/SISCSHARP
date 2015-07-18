@@ -14,7 +14,7 @@ namespace SeguroIntegral.Escritorio
         public frmMenu()
         {
             InitializeComponent();
-            this.mtAltoCosto.Visible = false;
+            //this.mtAltoCosto.Visible = false;
         }
 
         private void mtAltoCosto_Click(object sender, EventArgs e)
@@ -27,6 +27,11 @@ namespace SeguroIntegral.Escritorio
         {
             frmCobertura Ampliacaion = new frmCobertura();
             Ampliacaion.Show();
+        }
+
+        private void frmMenu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

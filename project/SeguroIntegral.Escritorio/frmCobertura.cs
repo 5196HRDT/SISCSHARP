@@ -109,6 +109,8 @@ namespace SeguroIntegral.Escritorio
         private void Limpiar() {
             txtNSolicitud.Clear();
             lblComentario.BackColor = Color.White;
+            dptFechaAp.Value = DateTime.Now;
+            dptFechaS.Value = DateTime.Now;
             txtNSolicitud.Clear();
             txtMonto.Clear();
             txtLoteFormato.Clear();
@@ -128,6 +130,8 @@ namespace SeguroIntegral.Escritorio
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.pSolicitud.Enabled = false;
+            id = 0;
+            idformato = 0;
             btnGrabar.Enabled = false;
             this.Limpiar();
             this.txtFormato.Select();
@@ -143,12 +147,7 @@ namespace SeguroIntegral.Escritorio
         {
             if (e.KeyCode == Keys.Enter)
             {
-                if (txtFormato.Text.IndexOf('-') == 2)
-                {
-                    string[] words = txtFormato.Text.Split('-');
-                    lst = GestorSeguro.ListarAmpliacion(words[0], words[1]);
-                }
-                if (txtFormato.Text.Equals("")) lst = GestorSeguro.ListarAmpliacion("", "");
+                lst= GestorSeguro.ListarAmpliacion(txtNLote.Text, txtFormato.Text);
                 this.LlenarLista();
             }
         }
@@ -156,7 +155,6 @@ namespace SeguroIntegral.Escritorio
         
         private void lvAmpliaciones_KeyDown(object sender, KeyEventArgs e)
         {
-            
             if (e.KeyCode == Keys.Enter)
             {
                 
@@ -174,7 +172,7 @@ namespace SeguroIntegral.Escritorio
                         pSolicitud.Enabled = true;
                         pSolicitud.Visible = true;
                         btnGrabar.Enabled = true;
-                        txtNSolicitud.Select();
+                        
                         
                     }                    
                 }   
@@ -183,15 +181,16 @@ namespace SeguroIntegral.Escritorio
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
+            Limpiar();
             pSolicitud.Enabled = true;
-            btnGrabar.Enabled = false;
+            btnGrabar.Enabled = true;
             Variables.instancia().InhabilitarControles(pSolicitud, true);
+            
             txtNSolicitud.Select();
         }
 
         private void btnGrabar_Click(object sender, EventArgs e)
         {
-            
             objAmpliacion = new Ampliaciones();
             objAmpliacion.idAmpliacion = id;
             objAmpliacion.objFormato = new Entidades.Formato();
@@ -202,9 +201,10 @@ namespace SeguroIntegral.Escritorio
             objAmpliacion.monto = decimal.Parse(txtMonto.Text);
             objAmpliacion.observacion= txtDiagnosticos.Text;
             if (GestorSeguro.GuardarAmpliacion(objAmpliacion) > 0) {
-                MetroMessageBox.Show(this,"SE GUARDO CORRECTAMENTE","INFORMACION");
+                MetroMessageBox.Show(this, "\n \n SE GUARDO CORRECTAMENTE", "INFORMACION", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Limpiar();
             }
+            else MetroMessageBox.Show(this, "\n \n OCURRIO UN ERROR", "INFORMACION", MessageBoxButtons.OK, MessageBoxIcon.Error);
            
         }
 
@@ -212,11 +212,12 @@ namespace SeguroIntegral.Escritorio
         {
             if (e.KeyCode == Keys.Enter)
             {
-                
                 lst = GestorSeguro.ListarAmpliaciones(dtpFechaI.Value.Date, dtpFechaF.Value.Date);
                 this.LlenarLista();
             }
         }
+
+       
 
 
     }

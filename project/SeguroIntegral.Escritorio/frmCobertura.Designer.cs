@@ -81,6 +81,7 @@
             this.lblSolicitud = new MetroFramework.Controls.MetroLabel();
             this.btnSalir = new MetroFramework.Controls.MetroButton();
             this.btnNuevo = new MetroFramework.Controls.MetroButton();
+            this.txtNLote = new MetroFramework.Controls.MetroTextBox();
             this.pSolicitud.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -97,14 +98,14 @@
             // txtFormato
             // 
             this.txtFormato.Lines = new string[0];
-            this.txtFormato.Location = new System.Drawing.Point(154, 86);
-            this.txtFormato.MaxLength = 32767;
+            this.txtFormato.Location = new System.Drawing.Point(207, 86);
+            this.txtFormato.MaxLength = 8;
             this.txtFormato.Name = "txtFormato";
             this.txtFormato.PasswordChar = '\0';
             this.txtFormato.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtFormato.SelectedText = "";
-            this.txtFormato.Size = new System.Drawing.Size(222, 23);
-            this.txtFormato.TabIndex = 1;
+            this.txtFormato.Size = new System.Drawing.Size(169, 23);
+            this.txtFormato.TabIndex = 2;
             this.txtFormato.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtFormato.UseSelectable = true;
             this.txtFormato.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtFormato_KeyDown);
@@ -118,7 +119,7 @@
             this.btnImprimir.Location = new System.Drawing.Point(154, 129);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(118, 32);
-            this.btnImprimir.TabIndex = 5;
+            this.btnImprimir.TabIndex = 17;
             this.btnImprimir.Text = "&IMPRIMIR";
             this.btnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnImprimir.UseSelectable = true;
@@ -152,7 +153,7 @@
             this.dtpFechaI.MinimumSize = new System.Drawing.Size(0, 29);
             this.dtpFechaI.Name = "dtpFechaI";
             this.dtpFechaI.Size = new System.Drawing.Size(114, 29);
-            this.dtpFechaI.TabIndex = 2;
+            this.dtpFechaI.TabIndex = 3;
             // 
             // dtpFechaF
             // 
@@ -161,7 +162,7 @@
             this.dtpFechaF.MinimumSize = new System.Drawing.Size(0, 29);
             this.dtpFechaF.Name = "dtpFechaF";
             this.dtpFechaF.Size = new System.Drawing.Size(114, 29);
-            this.dtpFechaF.TabIndex = 3;
+            this.dtpFechaF.TabIndex = 4;
             this.dtpFechaF.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dtpFechaF_KeyDown);
             // 
             // lvAmpliaciones
@@ -180,10 +181,10 @@
             this.lvAmpliaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvAmpliaciones.FullRowSelect = true;
             this.lvAmpliaciones.GridLines = true;
-            this.lvAmpliaciones.Location = new System.Drawing.Point(20, 183);
+            this.lvAmpliaciones.Location = new System.Drawing.Point(20, 186);
             this.lvAmpliaciones.MultiSelect = false;
             this.lvAmpliaciones.Name = "lvAmpliaciones";
-            this.lvAmpliaciones.Size = new System.Drawing.Size(679, 504);
+            this.lvAmpliaciones.Size = new System.Drawing.Size(691, 500);
             this.lvAmpliaciones.Sorting = System.Windows.Forms.SortOrder.Descending;
             this.lvAmpliaciones.TabIndex = 6;
             this.lvAmpliaciones.UseCompatibleStateImageBehavior = false;
@@ -279,7 +280,7 @@
             this.lblMRestante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.lblMRestante.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMRestante.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMRestante.Location = new System.Drawing.Point(371, 430);
+            this.lblMRestante.Location = new System.Drawing.Point(402, 436);
             this.lblMRestante.Name = "lblMRestante";
             this.lblMRestante.Size = new System.Drawing.Size(84, 29);
             this.lblMRestante.TabIndex = 22;
@@ -290,7 +291,7 @@
             this.lblMCobertura.BackColor = System.Drawing.Color.Wheat;
             this.lblMCobertura.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMCobertura.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMCobertura.Location = new System.Drawing.Point(371, 393);
+            this.lblMCobertura.Location = new System.Drawing.Point(402, 399);
             this.lblMCobertura.Name = "lblMCobertura";
             this.lblMCobertura.Size = new System.Drawing.Size(84, 29);
             this.lblMCobertura.TabIndex = 21;
@@ -301,7 +302,7 @@
             this.lblMAmpliaciones.BackColor = System.Drawing.Color.Gold;
             this.lblMAmpliaciones.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMAmpliaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMAmpliaciones.Location = new System.Drawing.Point(371, 355);
+            this.lblMAmpliaciones.Location = new System.Drawing.Point(402, 361);
             this.lblMAmpliaciones.Name = "lblMAmpliaciones";
             this.lblMAmpliaciones.Size = new System.Drawing.Size(84, 29);
             this.lblMAmpliaciones.TabIndex = 19;
@@ -312,7 +313,7 @@
             this.lblTotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.lblTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(162, 430);
+            this.lblTotal.Location = new System.Drawing.Point(162, 436);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(84, 29);
             this.lblTotal.TabIndex = 17;
@@ -323,7 +324,7 @@
             this.lblMOxigeno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lblMOxigeno.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMOxigeno.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMOxigeno.Location = new System.Drawing.Point(162, 393);
+            this.lblMOxigeno.Location = new System.Drawing.Point(162, 399);
             this.lblMOxigeno.Name = "lblMOxigeno";
             this.lblMOxigeno.Size = new System.Drawing.Size(84, 29);
             this.lblMOxigeno.TabIndex = 16;
@@ -334,7 +335,7 @@
             this.lblMProcedimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.lblMProcedimiento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMProcedimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMProcedimiento.Location = new System.Drawing.Point(162, 355);
+            this.lblMProcedimiento.Location = new System.Drawing.Point(162, 361);
             this.lblMProcedimiento.Name = "lblMProcedimiento";
             this.lblMProcedimiento.Size = new System.Drawing.Size(84, 29);
             this.lblMProcedimiento.TabIndex = 15;
@@ -345,7 +346,7 @@
             this.lblMFormato.BackColor = System.Drawing.Color.SkyBlue;
             this.lblMFormato.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMFormato.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMFormato.Location = new System.Drawing.Point(371, 312);
+            this.lblMFormato.Location = new System.Drawing.Point(402, 318);
             this.lblMFormato.Name = "lblMFormato";
             this.lblMFormato.Size = new System.Drawing.Size(84, 29);
             this.lblMFormato.TabIndex = 18;
@@ -356,7 +357,7 @@
             this.lblMMedicamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.lblMMedicamento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMMedicamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMMedicamento.Location = new System.Drawing.Point(162, 312);
+            this.lblMMedicamento.Location = new System.Drawing.Point(162, 318);
             this.lblMMedicamento.Name = "lblMMedicamento";
             this.lblMMedicamento.Size = new System.Drawing.Size(84, 29);
             this.lblMMedicamento.TabIndex = 15;
@@ -366,9 +367,9 @@
             // 
             this.lblComentario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblComentario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblComentario.Location = new System.Drawing.Point(16, 492);
+            this.lblComentario.Location = new System.Drawing.Point(16, 498);
             this.lblComentario.Name = "lblComentario";
-            this.lblComentario.Size = new System.Drawing.Size(439, 96);
+            this.lblComentario.Size = new System.Drawing.Size(470, 96);
             this.lblComentario.TabIndex = 23;
             this.lblComentario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -378,10 +379,10 @@
             this.btnCancelar.BackgroundImage = global::SeguroIntegral.Escritorio.Properties.Resources.cancel;
             this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnCancelar.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.btnCancelar.Location = new System.Drawing.Point(335, 195);
+            this.btnCancelar.Location = new System.Drawing.Point(371, 228);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(114, 32);
-            this.btnCancelar.TabIndex = 14;
+            this.btnCancelar.TabIndex = 15;
             this.btnCancelar.Text = "&CANCELAR";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.UseSelectable = true;
@@ -393,10 +394,10 @@
             this.btnGrabar.BackgroundImage = global::SeguroIntegral.Escritorio.Properties.Resources.save;
             this.btnGrabar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnGrabar.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.btnGrabar.Location = new System.Drawing.Point(16, 195);
+            this.btnGrabar.Location = new System.Drawing.Point(18, 228);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(115, 32);
-            this.btnGrabar.TabIndex = 13;
+            this.btnGrabar.TabIndex = 14;
             this.btnGrabar.Text = "&GUARDAR";
             this.btnGrabar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGrabar.UseSelectable = true;
@@ -406,7 +407,7 @@
             // 
             this.metroLabel17.AutoSize = true;
             this.metroLabel17.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel17.Location = new System.Drawing.Point(252, 430);
+            this.metroLabel17.Location = new System.Drawing.Point(283, 436);
             this.metroLabel17.Name = "metroLabel17";
             this.metroLabel17.Size = new System.Drawing.Size(88, 19);
             this.metroLabel17.TabIndex = 10;
@@ -417,7 +418,7 @@
             // 
             this.metroLabel16.AutoSize = true;
             this.metroLabel16.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel16.Location = new System.Drawing.Point(252, 399);
+            this.metroLabel16.Location = new System.Drawing.Point(283, 405);
             this.metroLabel16.Name = "metroLabel16";
             this.metroLabel16.Size = new System.Drawing.Size(114, 19);
             this.metroLabel16.TabIndex = 10;
@@ -428,7 +429,7 @@
             // 
             this.metroLabel15.AutoSize = true;
             this.metroLabel15.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel15.Location = new System.Drawing.Point(252, 361);
+            this.metroLabel15.Location = new System.Drawing.Point(283, 367);
             this.metroLabel15.Name = "metroLabel15";
             this.metroLabel15.Size = new System.Drawing.Size(121, 19);
             this.metroLabel15.TabIndex = 10;
@@ -439,7 +440,7 @@
             // 
             this.metroLabel14.AutoSize = true;
             this.metroLabel14.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel14.Location = new System.Drawing.Point(252, 318);
+            this.metroLabel14.Location = new System.Drawing.Point(283, 324);
             this.metroLabel14.Name = "metroLabel14";
             this.metroLabel14.Size = new System.Drawing.Size(113, 19);
             this.metroLabel14.TabIndex = 10;
@@ -450,7 +451,7 @@
             // 
             this.metroLabel18.AutoSize = true;
             this.metroLabel18.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel18.Location = new System.Drawing.Point(18, 464);
+            this.metroLabel18.Location = new System.Drawing.Point(18, 470);
             this.metroLabel18.Name = "metroLabel18";
             this.metroLabel18.Size = new System.Drawing.Size(88, 19);
             this.metroLabel18.TabIndex = 10;
@@ -461,7 +462,7 @@
             // 
             this.metroLabel13.AutoSize = true;
             this.metroLabel13.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel13.Location = new System.Drawing.Point(18, 430);
+            this.metroLabel13.Location = new System.Drawing.Point(18, 436);
             this.metroLabel13.Name = "metroLabel13";
             this.metroLabel13.Size = new System.Drawing.Size(64, 19);
             this.metroLabel13.TabIndex = 10;
@@ -472,7 +473,7 @@
             // 
             this.metroLabel12.AutoSize = true;
             this.metroLabel12.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel12.Location = new System.Drawing.Point(18, 399);
+            this.metroLabel12.Location = new System.Drawing.Point(18, 405);
             this.metroLabel12.Name = "metroLabel12";
             this.metroLabel12.Size = new System.Drawing.Size(103, 19);
             this.metroLabel12.TabIndex = 10;
@@ -483,7 +484,7 @@
             // 
             this.metroLabel11.AutoSize = true;
             this.metroLabel11.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel11.Location = new System.Drawing.Point(16, 361);
+            this.metroLabel11.Location = new System.Drawing.Point(16, 367);
             this.metroLabel11.Name = "metroLabel11";
             this.metroLabel11.Size = new System.Drawing.Size(145, 19);
             this.metroLabel11.TabIndex = 10;
@@ -494,7 +495,7 @@
             // 
             this.metroLabel10.AutoSize = true;
             this.metroLabel10.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel10.Location = new System.Drawing.Point(18, 318);
+            this.metroLabel10.Location = new System.Drawing.Point(18, 324);
             this.metroLabel10.Name = "metroLabel10";
             this.metroLabel10.Size = new System.Drawing.Size(138, 19);
             this.metroLabel10.TabIndex = 10;
@@ -529,9 +530,9 @@
             this.metroLabel8.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.metroLabel8.Location = new System.Drawing.Point(16, 89);
             this.metroLabel8.Name = "metroLabel8";
-            this.metroLabel8.Size = new System.Drawing.Size(53, 19);
+            this.metroLabel8.Size = new System.Drawing.Size(84, 19);
             this.metroLabel8.TabIndex = 10;
-            this.metroLabel8.Text = "Monto";
+            this.metroLabel8.Text = "Mont. Solic";
             this.metroLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // metroLabel7
@@ -540,15 +541,15 @@
             this.metroLabel7.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.metroLabel7.Location = new System.Drawing.Point(250, 89);
             this.metroLabel7.Name = "metroLabel7";
-            this.metroLabel7.Size = new System.Drawing.Size(77, 19);
+            this.metroLabel7.Size = new System.Drawing.Size(110, 19);
             this.metroLabel7.TabIndex = 10;
-            this.metroLabel7.Text = "Aprobada";
+            this.metroLabel7.Text = "Aprobada UDR";
             this.metroLabel7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dptFechaAp
             // 
             this.dptFechaAp.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dptFechaAp.Location = new System.Drawing.Point(333, 82);
+            this.dptFechaAp.Location = new System.Drawing.Point(371, 82);
             this.dptFechaAp.MinimumSize = new System.Drawing.Size(0, 29);
             this.dptFechaAp.Name = "dptFechaAp";
             this.dptFechaAp.Size = new System.Drawing.Size(115, 29);
@@ -557,7 +558,7 @@
             // dptFechaS
             // 
             this.dptFechaS.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dptFechaS.Location = new System.Drawing.Point(334, 47);
+            this.dptFechaS.Location = new System.Drawing.Point(371, 47);
             this.dptFechaS.MinimumSize = new System.Drawing.Size(0, 29);
             this.dptFechaS.Name = "dptFechaS";
             this.dptFechaS.Size = new System.Drawing.Size(115, 29);
@@ -568,12 +569,13 @@
             this.txtDiagnosticos.Lines = new string[0];
             this.txtDiagnosticos.Location = new System.Drawing.Point(116, 166);
             this.txtDiagnosticos.MaxLength = 32767;
+            this.txtDiagnosticos.Multiline = true;
             this.txtDiagnosticos.Name = "txtDiagnosticos";
             this.txtDiagnosticos.PasswordChar = '\0';
             this.txtDiagnosticos.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtDiagnosticos.SelectedText = "";
-            this.txtDiagnosticos.Size = new System.Drawing.Size(332, 23);
-            this.txtDiagnosticos.TabIndex = 12;
+            this.txtDiagnosticos.Size = new System.Drawing.Size(370, 45);
+            this.txtDiagnosticos.TabIndex = 13;
             this.txtDiagnosticos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtDiagnosticos.UseSelectable = true;
             // 
@@ -587,10 +589,9 @@
             this.txtLoteFormato.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtLoteFormato.SelectedText = "";
             this.txtLoteFormato.Size = new System.Drawing.Size(40, 23);
-            this.txtLoteFormato.TabIndex = 10;
+            this.txtLoteFormato.TabIndex = 11;
             this.txtLoteFormato.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtLoteFormato.UseSelectable = true;
-            this.txtLoteFormato.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNFormato_KeyDown);
             // 
             // txtNFormato
             // 
@@ -602,7 +603,7 @@
             this.txtNFormato.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtNFormato.SelectedText = "";
             this.txtNFormato.Size = new System.Drawing.Size(92, 23);
-            this.txtNFormato.TabIndex = 11;
+            this.txtNFormato.TabIndex = 12;
             this.txtNFormato.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtNFormato.UseSelectable = true;
             this.txtNFormato.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNFormato_KeyDown);
@@ -661,11 +662,11 @@
             // 
             this.metroLabel4.AutoSize = true;
             this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel4.Location = new System.Drawing.Point(18, 273);
+            this.metroLabel4.Location = new System.Drawing.Point(18, 281);
             this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(71, 19);
+            this.metroLabel4.Size = new System.Drawing.Size(261, 19);
             this.metroLabel4.TabIndex = 7;
-            this.metroLabel4.Text = "INFORME";
+            this.metroLabel4.Text = "INFORME CONSUMO TOTAL PACIENTE";
             // 
             // lblSolicitud
             // 
@@ -686,7 +687,7 @@
             this.btnSalir.Location = new System.Drawing.Point(585, 129);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(114, 32);
-            this.btnSalir.TabIndex = 14;
+            this.btnSalir.TabIndex = 16;
             this.btnSalir.Text = "&SALIR";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSalir.UseSelectable = true;
@@ -701,32 +702,50 @@
             this.btnNuevo.Location = new System.Drawing.Point(20, 129);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(100, 32);
-            this.btnNuevo.TabIndex = 4;
+            this.btnNuevo.TabIndex = 5;
             this.btnNuevo.Text = "&NUEVO";
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevo.UseSelectable = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
+            // txtNLote
+            // 
+            this.txtNLote.Lines = new string[0];
+            this.txtNLote.Location = new System.Drawing.Point(130, 86);
+            this.txtNLote.MaxLength = 32767;
+            this.txtNLote.Name = "txtNLote";
+            this.txtNLote.PasswordChar = '\0';
+            this.txtNLote.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtNLote.SelectedText = "";
+            this.txtNLote.Size = new System.Drawing.Size(71, 23);
+            this.txtNLote.TabIndex = 1;
+            this.txtNLote.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtNLote.UseSelectable = true;
+            // 
             // frmCobertura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackImage = global::SeguroIntegral.Escritorio.Properties.Resources.document;
             this.BackImagePadding = new System.Windows.Forms.Padding(350, 15, 0, 0);
             this.BackMaxSize = 45;
-            this.ClientSize = new System.Drawing.Size(1232, 713);
+            this.ClientSize = new System.Drawing.Size(1232, 709);
             this.Controls.Add(this.pSolicitud);
             this.Controls.Add(this.lvAmpliaciones);
             this.Controls.Add(this.dtpFechaF);
             this.Controls.Add(this.dtpFechaI);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.btnImprimir);
+            this.Controls.Add(this.txtNLote);
             this.Controls.Add(this.txtFormato);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.btnSalir);
+            this.MaximizeBox = false;
             this.Name = "frmCobertura";
+            this.Resizable = false;
             this.Text = "AMPLIACIONES COBERTURA";
             this.Load += new System.EventHandler(this.frmCobertura_Load);
             this.pSolicitud.ResumeLayout(false);
@@ -791,6 +810,7 @@
         private MetroFramework.Controls.MetroTextBox txtLoteFormato;
         private MetroFramework.Controls.MetroButton btnCancelar;
         private MetroFramework.Controls.MetroLabel metroLabel4;
+        private MetroFramework.Controls.MetroTextBox txtNLote;
 
 
     }

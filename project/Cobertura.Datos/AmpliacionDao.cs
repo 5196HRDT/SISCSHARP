@@ -24,7 +24,6 @@ namespace Cobertura.Datos
         private void cerrar()
         {
             cmd.Connection.Close();
-
             dr.Close();
             cmd.Dispose();
         }
@@ -55,10 +54,7 @@ namespace Cobertura.Datos
             }
             finally { this.cerrar(); }
             return objAmpliacion;
-
         }
-
-
         public List<Ampliaciones> ListarAmpliaciones(string lote, string numero) {
             List<Ampliaciones> lstAmpliaciones = null;
             try
@@ -95,8 +91,6 @@ namespace Cobertura.Datos
             return lstAmpliaciones;
 
         }
-
-
         public List<Ampliaciones> ListarAmpliaciones(DateTime FechaI, DateTime FechaF)
         {
             List<Ampliaciones> lstAmpliaciones = null;
@@ -136,9 +130,47 @@ namespace Cobertura.Datos
 
         }
 
+        public List<Ampliaciones> EstadoCuentaPaciente(DateTime FechaI, DateTime FechaF) {
+            List<Ampliaciones> lstAmpliaciones = null;
+            try
+            {
+                cmd = new SqlCommand("sp_AltoCostoFill");
+                cmd.Connection = Conexion.instancia().obtenerConexion();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@fechaInicio", FechaI);
+                cmd.Parameters.AddWithValue("@fechaFin", FechaF);
+                dr = cmd.ExecuteReader();
+                lstAmpliaciones = new List<Ampliaciones>();
+                Ampliaciones objAmpiacion;
+                while (dr.Read()) {
+                    objAmpiacion = new Ampliaciones();
+                    objAmpiacion.objFormato = new Formato();
+                    objAmpiacion.objFormato.numero = dr["Formato"].ToString();
+                    objAmpiacion.objFormato.hei = dr["Afiliado"].ToString();
+                    objAmpiacion.objFormato.montoMedicamento = (decimal)dr["montoFua"];
+                    objAmpiacion.objPersona = new Persona();
+                    objAmpiacion.objPersona.nroHistoria = dr["Historia"].ToString();
+                    objAmpiacion.objPersona.nombres = dr["Paciente"].ToString();
+                    
+                    lstAmpliaciones.Add(objAmpiacion);
+
+                    //objAmpiacion.objFormato.objTipoAfiliacion 
+                    //objAmpiacion.objFormato.objTipoAfiliacion.descripcion=
+
+
+                }
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally { this.cerrar(); }
+            return lstAmpliaciones;
+        }
+
         public int Ingresar(Ampliaciones objAmplicacion) {
             int retorno = 0;
-            string comando;
             try
             {
                 cmd = new SqlCommand("sp_CoberturaIngresar");
