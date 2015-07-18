@@ -163,16 +163,6 @@ C:\Users\SIS\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\Segur
 C:\Users\SIS\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.Properties.Resources.resources
 C:\Users\SIS\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.TaskWindowControl.resources
 C:\Users\SIS\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.csproj.GenerateResource.Cache
-D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.exe
-D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.pdb
-D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.csprojResolveAssemblyReference.cache
-D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.frmMenu.resources
-D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.frmCobertura.resources
-D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.frmConsultaCobertura.resources
-D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.frmLogin.resources
-D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.Properties.Resources.resources
-D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.TaskWindowControl.resources
-D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.csproj.GenerateResource.Cache
 D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\SeguroIntegral.Escritorio.exe
 D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\SeguroIntegral.Escritorio.pdb
 D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\Cobertura.Entidades.dll
@@ -198,3 +188,13 @@ D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.E
 D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\Comunes.Datos.pdb
 D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\SeguroIntegralDao.pdb
 D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\Cobertura.Datos.pdb
+D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.csprojResolveAssemblyReference.cache
+D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.frmMenu.resources
+D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.frmCobertura.resources
+D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.frmConsultaCobertura.resources
+D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.frmLogin.resources
+D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.Properties.Resources.resources
+D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.TaskWindowControl.resources
+D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.csproj.GenerateResource.Cache
+D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.exe
+D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.pdb

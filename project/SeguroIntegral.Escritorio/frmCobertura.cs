@@ -10,37 +10,26 @@ using SeguroIntegral.Dominio;
 using SeguroIntegral.Entidades;
 using Cobertura.Entidades;
 using Comunes.Utilitarios;
-namespace SeguroIntegral.Escritorio
-{
-    public partial class frmCobertura : MetroForm
-    {
-        
-        public frmCobertura()
-        {
-            InitializeComponent();
-        }
+namespace SeguroIntegral.Escritorio{
+    public partial class frmCobertura : MetroForm{   
         private List<Ampliaciones> lst;
         private Formato objFormato;
         private ListViewItem Fila;
         private GestorSeguroIntegral GestorSeguro = GestorSeguroIntegral.instancia();
-        private int id,idformato;
-        private Ampliaciones objAmpliacion;
-
-        private void frmCobertura_Load(object sender, EventArgs e)
-        {
+        private int id, idformato;
+        private Ampliaciones objAmpliacion;        
+        public frmCobertura(){
+            InitializeComponent();
+        }       
+        private void frmCobertura_Load(object sender, EventArgs e){
             lvAmpliaciones.Columns[0].Width = 0;
             lvAmpliaciones.Columns[1].Width = 0;
             pSolicitud.Enabled = false;
-            btnGrabar.Enabled = false;
-            //pSolicitud.Visible = false;  
-            
+            btnGrabar.Enabled = false;                    
         }
-
-        private void LlenarLista()
-        {
+        private void LlenarLista(){
             lvAmpliaciones.Items.Clear();
-            for (int i = 0; i < lst.Count; i++)
-            {
+            for (int i = 0; i < lst.Count; i++){
                 Fila = new ListViewItem();
                 Fila = lvAmpliaciones.Items.Add(lst[i].idAmpliacion.ToString());
                 Fila.SubItems.Add(lst[i].objFormato.idFormato.ToString());
@@ -52,13 +41,11 @@ namespace SeguroIntegral.Escritorio
             }
         }
 
-        private void infoFormato()
-        {
+        private void infoFormato(){
             decimal   mformato, cobertura, total;
             
             objFormato = GestorSeguro.ObtenerFormato(idformato);
-            if (objFormato != null)
-            {
+            if (objFormato != null){
                 mformato = 7700;
                 lblMFormato.Text = mformato.ToString("#.00");
                 cobertura = objFormato.TCobertura+mformato;
@@ -75,18 +62,15 @@ namespace SeguroIntegral.Escritorio
                 lblTotal.Text = total.ToString("#.00");
                 lblMRestante.Text = (cobertura - total).ToString("#.00");
                 decimal restante=decimal.Parse(lblMRestante.Text);
-                if (restante > 5000)
-                {
+                if (restante > 5000){
                     lblComentario.Text = "TODO ESTA BIEN, NO REQUIERE AMPLIACION";
                     lblComentario.BackColor=Color.Green;
                 }
-                if (restante < 5000 && restante >= 2000)
-                {
+                if (restante < 5000 && restante >= 2000){
                     lblComentario.Text = "EN OBSERVACION, PUEDE REQUERIR AMPLIACION";
                     lblComentario.BackColor = Color.Orange;
                 }
-                if (restante < 2000)
-                {
+                if (restante < 2000){
                     lblComentario.Text = "ALERTA, REQUIERE AMPLIACION URGENTE, DE LO CONTRARIO SE INHABILITARA FORMATO POR SISTEMAS";
                     lblComentario.BackColor = Color.Red;
                     lblComentario.ForeColor = Color.White;
@@ -127,37 +111,29 @@ namespace SeguroIntegral.Escritorio
             btnGrabar.Enabled = false;
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
+        private void btnCancelar_Click(object sender, EventArgs e) {
             this.pSolicitud.Enabled = false;
-            id = 0;
-            idformato = 0;
+            id = 0;   idformato = 0;
             btnGrabar.Enabled = false;
             this.Limpiar();
             this.txtFormato.Select();
             Variables.instancia().InhabilitarControles(pSolicitud, false);
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
+        private void btnSalir_Click(object sender, EventArgs e) {
             this.Close();
         }
 
-        private void txtFormato_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
+        private void txtFormato_KeyDown(object sender, KeyEventArgs e){
+            if (e.KeyCode == Keys.Enter){
                 lst= GestorSeguro.ListarAmpliacion(txtNLote.Text, txtFormato.Text);
                 this.LlenarLista();
             }
         }
 
         
-        private void lvAmpliaciones_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                
+        private void lvAmpliaciones_KeyDown(object sender, KeyEventArgs e) {
+            if (e.KeyCode == Keys.Enter){                
                 if (lvAmpliaciones.SelectedIndices.Count > 0) {
                     id = int.Parse(lvAmpliaciones.SelectedItems[0].SubItems[0].Text);
                     idformato = int.Parse(lvAmpliaciones.SelectedItems[0].SubItems[1].Text);
@@ -172,25 +148,20 @@ namespace SeguroIntegral.Escritorio
                         pSolicitud.Enabled = true;
                         pSolicitud.Visible = true;
                         btnGrabar.Enabled = true;
-                        
-                        
                     }                    
                 }   
             }
         }
 
-        private void btnNuevo_Click(object sender, EventArgs e)
-        {
+        private void btnNuevo_Click(object sender, EventArgs e){
             Limpiar();
             pSolicitud.Enabled = true;
             btnGrabar.Enabled = true;
-            Variables.instancia().InhabilitarControles(pSolicitud, true);
-            
+            Variables.instancia().InhabilitarControles(pSolicitud, true);            
             txtNSolicitud.Select();
         }
 
-        private void btnGrabar_Click(object sender, EventArgs e)
-        {
+        private void btnGrabar_Click(object sender, EventArgs e){
             objAmpliacion = new Ampliaciones();
             objAmpliacion.idAmpliacion = id;
             objAmpliacion.objFormato = new Entidades.Formato();
@@ -208,17 +179,11 @@ namespace SeguroIntegral.Escritorio
            
         }
 
-        private void dtpFechaF_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
+        private void dtpFechaF_KeyDown(object sender, KeyEventArgs e) {
+            if (e.KeyCode == Keys.Enter){
                 lst = GestorSeguro.ListarAmpliaciones(dtpFechaI.Value.Date, dtpFechaF.Value.Date);
                 this.LlenarLista();
             }
         }
-
-       
-
-
     }
 }

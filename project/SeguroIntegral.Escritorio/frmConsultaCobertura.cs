@@ -28,8 +28,7 @@ namespace SeguroIntegral.Escritorio
         {
             List<Ampliaciones> lst;
             if (e.KeyCode == Keys.Enter) {
-                lst = GestorSeguroIntegral.instancia().EstadoCuenta(dtpInicio.Value.Date, dtpFinal.Value.Date);
-                metroGrid1.DataSource = lst;
+                lst = GestorSeguroIntegral.instancia().EstadoCuenta(dtpInicio.Value.Date, dtpFinal.Value.Date);             
             }
         }
 

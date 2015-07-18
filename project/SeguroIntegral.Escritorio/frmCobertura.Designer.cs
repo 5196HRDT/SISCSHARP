@@ -184,7 +184,7 @@
             this.lvAmpliaciones.Location = new System.Drawing.Point(20, 186);
             this.lvAmpliaciones.MultiSelect = false;
             this.lvAmpliaciones.Name = "lvAmpliaciones";
-            this.lvAmpliaciones.Size = new System.Drawing.Size(691, 500);
+            this.lvAmpliaciones.Size = new System.Drawing.Size(706, 500);
             this.lvAmpliaciones.Sorting = System.Windows.Forms.SortOrder.Descending;
             this.lvAmpliaciones.TabIndex = 6;
             this.lvAmpliaciones.UseCompatibleStateImageBehavior = false;
@@ -210,12 +210,12 @@
             // Paciente
             // 
             this.Paciente.Text = "Paciente";
-            this.Paciente.Width = 195;
+            this.Paciente.Width = 245;
             // 
             // Fecha
             // 
             this.Fecha.Text = "Fecha";
-            this.Fecha.Width = 91;
+            this.Fecha.Width = 100;
             // 
             // Monto
             // 
@@ -267,9 +267,9 @@
             this.pSolicitud.HorizontalScrollbarBarColor = true;
             this.pSolicitud.HorizontalScrollbarHighlightOnWheel = false;
             this.pSolicitud.HorizontalScrollbarSize = 10;
-            this.pSolicitud.Location = new System.Drawing.Point(717, 76);
+            this.pSolicitud.Location = new System.Drawing.Point(732, 83);
             this.pSolicitud.Name = "pSolicitud";
-            this.pSolicitud.Size = new System.Drawing.Size(503, 611);
+            this.pSolicitud.Size = new System.Drawing.Size(503, 603);
             this.pSolicitud.TabIndex = 6;
             this.pSolicitud.VerticalScrollbarBarColor = true;
             this.pSolicitud.VerticalScrollbarHighlightOnWheel = false;
@@ -367,7 +367,7 @@
             // 
             this.lblComentario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblComentario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblComentario.Location = new System.Drawing.Point(16, 498);
+            this.lblComentario.Location = new System.Drawing.Point(18, 494);
             this.lblComentario.Name = "lblComentario";
             this.lblComentario.Size = new System.Drawing.Size(470, 96);
             this.lblComentario.TabIndex = 23;
@@ -550,7 +550,7 @@
             // 
             this.dptFechaAp.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dptFechaAp.Location = new System.Drawing.Point(371, 82);
-            this.dptFechaAp.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dptFechaAp.MinimumSize = new System.Drawing.Size(4, 29);
             this.dptFechaAp.Name = "dptFechaAp";
             this.dptFechaAp.Size = new System.Drawing.Size(115, 29);
             this.dptFechaAp.TabIndex = 10;
@@ -559,7 +559,7 @@
             // 
             this.dptFechaS.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dptFechaS.Location = new System.Drawing.Point(371, 47);
-            this.dptFechaS.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dptFechaS.MinimumSize = new System.Drawing.Size(4, 29);
             this.dptFechaS.Name = "dptFechaS";
             this.dptFechaS.Size = new System.Drawing.Size(115, 29);
             this.dptFechaS.TabIndex = 8;
@@ -730,7 +730,7 @@
             this.BackImage = global::SeguroIntegral.Escritorio.Properties.Resources.document;
             this.BackImagePadding = new System.Windows.Forms.Padding(350, 15, 0, 0);
             this.BackMaxSize = 45;
-            this.ClientSize = new System.Drawing.Size(1232, 709);
+            this.ClientSize = new System.Drawing.Size(1249, 709);
             this.Controls.Add(this.pSolicitud);
             this.Controls.Add(this.lvAmpliaciones);
             this.Controls.Add(this.dtpFechaF);

@@ -6,8 +6,11 @@ using Cobertura.Entidades;
 using Cobertura.Datos;
 using SeguroIntegral.Datos;
 using SeguroIntegral.Entidades;
+using System.ComponentModel;
+
 namespace SeguroIntegral.Dominio
 {
+    [DataObject ()]
     public class GestorSeguroIntegral
     {
         private static GestorSeguroIntegral _instancia;
@@ -27,6 +30,7 @@ namespace SeguroIntegral.Dominio
                 throw e;
             }
         }
+        [DataObjectMethod(DataObjectMethodType.Select, false)]
         public List<Ampliaciones> EstadoCuenta(DateTime FechaI, DateTime FechaF) {
             try
             {
@@ -34,10 +38,11 @@ namespace SeguroIntegral.Dominio
             }
             catch (Exception e )
             {
-                
                 throw e;
             }
         }
+       
+
         public Formato ObtenerFormato(int idFormato)
         {
             try

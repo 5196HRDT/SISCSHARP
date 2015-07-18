@@ -150,14 +150,8 @@ namespace Cobertura.Datos
                     objAmpiacion.objFormato.montoMedicamento = (decimal)dr["montoFua"];
                     objAmpiacion.objPersona = new Persona();
                     objAmpiacion.objPersona.nroHistoria = dr["Historia"].ToString();
-                    objAmpiacion.objPersona.nombres = dr["Paciente"].ToString();
-                    
+                    objAmpiacion.objPersona.nombres = dr["Paciente"].ToString();                   
                     lstAmpliaciones.Add(objAmpiacion);
-
-                    //objAmpiacion.objFormato.objTipoAfiliacion 
-                    //objAmpiacion.objFormato.objTipoAfiliacion.descripcion=
-
-
                 }
 
             }
