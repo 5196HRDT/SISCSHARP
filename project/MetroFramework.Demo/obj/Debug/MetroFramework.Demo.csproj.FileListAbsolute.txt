@@ -73,3 +73,18 @@ C:\Users\SIS\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramew
 C:\Users\SIS\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.csproj.GenerateResource.Cache
 C:\Users\SIS\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.exe
 C:\Users\SIS\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.pdb
+D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework.Demo\bin\Debug\Data\Books.xml
+D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework.Demo\bin\Debug\MetroFramework.Demo.exe.config
+D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework.Demo\bin\Debug\MetroFramework.Demo.exe
+D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework.Demo\bin\Debug\MetroFramework.Demo.pdb
+D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework.Demo\bin\Debug\MetroFramework.dll
+D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework.Demo\bin\Debug\MetroFramework.Fonts.dll
+D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework.Demo\bin\Debug\MetroFramework.Fonts.pdb
+D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework.Demo\bin\Debug\MetroFramework.pdb
+D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.csprojResolveAssemblyReference.cache
+D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.MainForm.resources
+D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.Properties.Resources.resources
+D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.TaskWindowControl.resources
+D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.csproj.GenerateResource.Cache
+D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.exe
+D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.pdb
