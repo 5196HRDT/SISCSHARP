@@ -6,23 +6,31 @@ using Cobertura.Entidades;
 using Cobertura.Datos;
 using SeguroIntegral.Datos;
 using SeguroIntegral.Entidades;
-using System.ComponentModel;
 
 namespace SeguroIntegral.Dominio
 {
-    [DataObject ()]
+    public struct Monto
+    {
+        public decimal Med;
+        public decimal Pro;
+    }
+
     public class GestorSeguroIntegral
     {
         private static GestorSeguroIntegral _instancia;
         private GestorSeguroIntegral() { }
-        public static GestorSeguroIntegral instancia() {
+
+        public static GestorSeguroIntegral instancia()
+        {
             if (_instancia == null) _instancia = new GestorSeguroIntegral();
             return _instancia;
         }
-        public List<Formato>ListarFormato(string lote, string numero) {
+
+        public List<Formato> ListarFormato(string lote, string numero)
+        {
             try
             {
-                return FormatoDao.instancia().ListarFormato(lote,numero);
+                return FormatoDao.instancia().ListarFormato(lote, numero);
             }
             catch (Exception e)
             {
@@ -30,18 +38,57 @@ namespace SeguroIntegral.Dominio
                 throw e;
             }
         }
-        [DataObjectMethod(DataObjectMethodType.Select, false)]
-        public List<Ampliaciones> EstadoCuenta(DateTime FechaI, DateTime FechaF) {
+        protected FormatoDao objLF = FormatoDao.instancia();
+      
+
+        public List<Formato> EstadoCuenta(DateTime FechaI, DateTime FechaF)
+        {
             try
             {
-                return AmpliacionDao.instancia().EstadoCuentaPaciente(FechaI, FechaF);
+
+                List<Formato> lstCuentas = objLF.ConsumoFormatos(FechaI, FechaF);
+                List<Formato> lstOxigeno = objLF.ConsumoOxigenoFechas(FechaI, FechaF);
+                if (lstOxigeno.Count > 0)
+                {
+                    foreach (Formato item in lstOxigeno)
+                    {
+                        lstCuentas.RemoveAll(p => p.idFormato == item.idFormato);
+                    }
+                    List<Formato> lsRetorno = lstOxigeno.Union(lstCuentas).ToList();
+                    return lsRetorno;
+                }
+                else return lstCuentas;
+                //return lsRetorno.ToList();
             }
-            catch (Exception e )
+            catch (Exception e)
             {
                 throw e;
             }
         }
-       
+        public List<Formato> EstadoCuenta(string nroHistoria)
+        {
+            try
+            {
+
+                List<Formato> lstCuentas = objLF.ConsumoFormatos(nroHistoria);
+                List<Formato> lstOxigeno = objLF.ConsumoOxigenoFechas(nroHistoria);
+                if (lstOxigeno.Count > 0) { 
+                    foreach (Formato item in lstOxigeno)
+                    {
+                        lstCuentas.RemoveAll(p => p.idFormato == item.idFormato);
+                    }
+                    List<Formato> lsRetorno = lstOxigeno.Union(lstCuentas).ToList();
+                    return lsRetorno;
+                }
+                
+                else return lstCuentas;
+                //return lsRetorno.ToList();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
 
         public Formato ObtenerFormato(int idFormato)
         {
@@ -71,22 +118,24 @@ namespace SeguroIntegral.Dominio
         {
             if (objAmpliacion.idAmpliacion == 0)
             {
-                if (objAmpliacion.objFormato.idFormato == 0 && (objAmpliacion.fechaSolicitud> objAmpliacion.fechaSolicitud)) return 0;
+                if (objAmpliacion.objFormato.idFormato == 0 && (objAmpliacion.fechaSolicitud > objAmpliacion.fechaAprobada)) return 0;
                 return AmpliacionDao.instancia().Ingresar(objAmpliacion);
             }
-            else {
+            else
+            {
                 return AmpliacionDao.instancia().Modificar(objAmpliacion); ;
             }
-        } 
+        }
 
-        public Ampliaciones ObternerAmpliacion(int id) {
+        public Ampliaciones ObternerAmpliacion(int id)
+        {
             try
             {
                 return AmpliacionDao.instancia().ObtenerAmpliacion(id);
             }
             catch (Exception e)
             {
-                
+
                 throw e;
             }
         }
@@ -94,7 +143,7 @@ namespace SeguroIntegral.Dominio
         {
             try
             {
-                return AmpliacionDao.instancia().ListarAmpliaciones(lote,numero);
+                return AmpliacionDao.instancia().ListarAmpliaciones(lote, numero);
             }
             catch (Exception e)
             {

@@ -48,16 +48,17 @@ namespace SeguroIntegral.Escritorio{
             if (objFormato != null){
                 mformato = 7700;
                 lblMFormato.Text = mformato.ToString("#.00");
-                cobertura = objFormato.TCobertura+mformato;
-                total= objFormato.montoMedicamento + objFormato.montoProcedimiento + objFormato.montoOxigeno;
-                lblSolicitud.Text = string.Concat(lblSolicitud.Text,'-',objFormato.objPaciete.aPaterno, " ",
-                                    objFormato.objPaciete.aMaterno, " ", objFormato.objPaciete.nombres);
+                
+                cobertura = objFormato.Monto.TCobertura + mformato;
+                total= objFormato.Monto.Medicamento + objFormato.Monto.Procedimiento + objFormato.Monto.Oxigeno;
+                lblSolicitud.Text = string.Concat(lblSolicitud.Text,'-',objFormato.objPaciente.aPaterno, " ",
+                                    objFormato.objPaciente.aMaterno, " ", objFormato.objPaciente.nombres);
                 txtLoteFormato.Text = objFormato.lote;
                 txtNFormato.Text = objFormato.numero;
-                lblMMedicamento.Text = objFormato.montoMedicamento.ToString("#.00");
-                lblMProcedimiento.Text = objFormato.montoProcedimiento.ToString("#.00");
-                lblMOxigeno.Text = objFormato.montoOxigeno.ToString("#.00");
-                lblMAmpliaciones.Text = objFormato.TCobertura.ToString("#.00");
+                lblMMedicamento.Text = objFormato.Monto.Medicamento.ToString("#.00");
+                lblMProcedimiento.Text = objFormato.Monto.Procedimiento.ToString("#.00");
+                lblMOxigeno.Text = objFormato.Monto.Oxigeno.ToString("#.00");
+                lblMAmpliaciones.Text = objFormato.Monto.TCobertura.ToString("#.00");
                 lblMCobertura.Text = cobertura.ToString("#.00");
                 lblTotal.Text = total.ToString("#.00");
                 lblMRestante.Text = (cobertura - total).ToString("#.00");
@@ -85,7 +86,7 @@ namespace SeguroIntegral.Escritorio{
                 objFormato = GestorSeguro.ObtenerFormato(txtLoteFormato.Text.Trim(), txtNFormato.Text.Trim());
                 if (objFormato != null) { 
                     idformato = objFormato.idFormato;
-                    lblSolicitud.Text = string.Concat(lblSolicitud.Text, objFormato.objPaciete.nombres);
+                    lblSolicitud.Text = string.Concat(lblSolicitud.Text, objFormato.objPaciente.nombres);
                     this.infoFormato();
                 }
             }

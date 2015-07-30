@@ -22,6 +22,17 @@ namespace Comunes.Utilitarios
 
         public string mensaje { get; set; }
 
+        //public int[] anios { get; set; }
+        public List<string> anios =  new List<string>();
+        public List<string> Anios()
+        {
+            for (int i = DateTime.Now.Year; i > DateTime.Now.Year - 12; i--)
+            {
+                anios.Add( i.ToString());
+
+            }
+            return anios;
+        }
         public void InhabilitarControles(Panel Panel, bool v)
         {
             foreach (Control c in Panel.Controls)
