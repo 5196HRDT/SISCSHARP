@@ -157,6 +157,29 @@ namespace Cobertura.Datos
             }
             return retorno;
         }
+        public int Eliminar(int idCobertura)
+        {
+            int retorno = 0;
+            try
+            {
+                cmd = new SqlCommand("sp_CoberturaEliminar");
+                cmd.Connection = cn.obtenerConexion();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@idCobertura", idCobertura);               
+                retorno = cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                cmd.Connection.Close();
+                cmd.Dispose();
+            }
+            return retorno;
+        }
+
 
         public int Modificar(Ampliaciones objAmplicacion)
         {

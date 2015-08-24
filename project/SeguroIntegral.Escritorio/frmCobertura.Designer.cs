@@ -420,7 +420,7 @@
             this.metroLabel16.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.metroLabel16.Location = new System.Drawing.Point(283, 405);
             this.metroLabel16.Name = "metroLabel16";
-            this.metroLabel16.Size = new System.Drawing.Size(114, 19);
+            this.metroLabel16.Size = new System.Drawing.Size(115, 19);
             this.metroLabel16.TabIndex = 10;
             this.metroLabel16.Text = "T. Cobertura S/.";
             this.metroLabel16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -442,7 +442,7 @@
             this.metroLabel14.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.metroLabel14.Location = new System.Drawing.Point(283, 324);
             this.metroLabel14.Name = "metroLabel14";
-            this.metroLabel14.Size = new System.Drawing.Size(113, 19);
+            this.metroLabel14.Size = new System.Drawing.Size(114, 19);
             this.metroLabel14.TabIndex = 10;
             this.metroLabel14.Text = "Monto F.U.A S/.";
             this.metroLabel14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -464,7 +464,7 @@
             this.metroLabel13.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.metroLabel13.Location = new System.Drawing.Point(18, 436);
             this.metroLabel13.Name = "metroLabel13";
-            this.metroLabel13.Size = new System.Drawing.Size(64, 19);
+            this.metroLabel13.Size = new System.Drawing.Size(65, 19);
             this.metroLabel13.TabIndex = 10;
             this.metroLabel13.Text = "Total S/.";
             this.metroLabel13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -475,7 +475,7 @@
             this.metroLabel12.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.metroLabel12.Location = new System.Drawing.Point(18, 405);
             this.metroLabel12.Name = "metroLabel12";
-            this.metroLabel12.Size = new System.Drawing.Size(103, 19);
+            this.metroLabel12.Size = new System.Drawing.Size(104, 19);
             this.metroLabel12.TabIndex = 10;
             this.metroLabel12.Text = "T. Oxigeno S/.";
             this.metroLabel12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -486,7 +486,7 @@
             this.metroLabel11.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.metroLabel11.Location = new System.Drawing.Point(16, 367);
             this.metroLabel11.Name = "metroLabel11";
-            this.metroLabel11.Size = new System.Drawing.Size(145, 19);
+            this.metroLabel11.Size = new System.Drawing.Size(146, 19);
             this.metroLabel11.TabIndex = 10;
             this.metroLabel11.Text = "T. Procedimiento S/.";
             this.metroLabel11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -497,7 +497,7 @@
             this.metroLabel10.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.metroLabel10.Location = new System.Drawing.Point(18, 324);
             this.metroLabel10.Name = "metroLabel10";
-            this.metroLabel10.Size = new System.Drawing.Size(138, 19);
+            this.metroLabel10.Size = new System.Drawing.Size(139, 19);
             this.metroLabel10.TabIndex = 10;
             this.metroLabel10.Text = "T. Medicamento S/.";
             this.metroLabel10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -550,7 +550,7 @@
             // 
             this.dptFechaAp.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dptFechaAp.Location = new System.Drawing.Point(371, 82);
-            this.dptFechaAp.MinimumSize = new System.Drawing.Size(4, 29);
+            this.dptFechaAp.MinimumSize = new System.Drawing.Size(0, 29);
             this.dptFechaAp.Name = "dptFechaAp";
             this.dptFechaAp.Size = new System.Drawing.Size(115, 29);
             this.dptFechaAp.TabIndex = 10;
@@ -559,7 +559,7 @@
             // 
             this.dptFechaS.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dptFechaS.Location = new System.Drawing.Point(371, 47);
-            this.dptFechaS.MinimumSize = new System.Drawing.Size(4, 29);
+            this.dptFechaS.MinimumSize = new System.Drawing.Size(0, 29);
             this.dptFechaS.Name = "dptFechaS";
             this.dptFechaS.Size = new System.Drawing.Size(115, 29);
             this.dptFechaS.TabIndex = 8;
@@ -664,7 +664,7 @@
             this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.metroLabel4.Location = new System.Drawing.Point(18, 281);
             this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(261, 19);
+            this.metroLabel4.Size = new System.Drawing.Size(265, 19);
             this.metroLabel4.TabIndex = 7;
             this.metroLabel4.Text = "INFORME CONSUMO TOTAL PACIENTE";
             // 

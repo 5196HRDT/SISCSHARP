@@ -38,7 +38,6 @@ namespace SeguroIntegral.Escritorio
                 COBERTURA = (item.Monto.TCobertura + 7700).ToString("#,00"),
                 DIFERNCIA = ((item.Monto.TCobertura + 7700) - (item.Monto.Oxigeno + item.Monto.Total)).ToString("#.00")
             }).ToList();
-
         }
         private void frmConsultaCobertura_Load(object sender, EventArgs e)
         {
@@ -46,6 +45,7 @@ namespace SeguroIntegral.Escritorio
             gvLista.AllowUserToAddRows = false;
             cboAnio.DataSource = Variables.instancia().Anios();
             cboMes.SelectedIndex = 0;
+           
         }
         private void dtpFinal_KeyDown(object sender, KeyEventArgs e)
         {
@@ -54,7 +54,10 @@ namespace SeguroIntegral.Escritorio
             {
                 FechaI = dtpInicio.Value.Date;
                 FechaF = dtpFinal.Value.Date;
-                this.CargarGrid();
+                if ((FechaF - FechaI).Days > 90) {
+                    MetroMessageBox.Show(this, "FECHA SUPERA EL LIMITE DE 90 DIAS", "MENSAJE DE INFORMACION", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else this.CargarGrid();
             }
 
         }
@@ -149,16 +152,25 @@ namespace SeguroIntegral.Escritorio
             }
 
         }
-
         private void txtPaciente_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter && pulsado == 1) { 
-
+            pulsado++;
+            if (e.KeyCode == Keys.Enter && pulsado == 1) {
+                list = GestorSeguroIntegral.instancia().EstadoCuenta(txtPaciente.Text);
+                gvLista.DataSource = list.Select(item => new
+                {
+                    LOTE = item.lote,
+                    NUMERO = item.numero,
+                    AFILIACION = item.objTipoAseguramiento.descripcion,
+                    NROHISTORIA = item.objPaciente.nroHistoria,
+                    PACIENTE = string.Concat(item.objPaciente.aPaterno, " ", item.objPaciente.aMaterno, "  ", item.objPaciente.nombres),
+                    TOTAL = item.Monto.Total.ToString("#,00"),
+                    OXIGENO = item.Monto.Oxigeno.ToString("#,00"),
+                    COBERTURA = (item.Monto.TCobertura + 7700).ToString("#,00"),
+                    DIFERNCIA = ((item.Monto.TCobertura + 7700) - (item.Monto.Oxigeno + item.Monto.Total)).ToString("#.00")
+                }).ToList();
             }
         }
-
-
-
         private void txtPaciente_KeyUp(object sender, KeyEventArgs e)
         {
             pulsado = 0;

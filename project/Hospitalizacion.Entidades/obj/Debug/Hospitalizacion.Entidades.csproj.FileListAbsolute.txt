@@ -3,3 +3,8 @@ C:\Users\Sistemas\Desktop\SISCSHARP\project\Hospitalizacion.Entidades\bin\Debug\
 C:\Users\Sistemas\Desktop\SISCSHARP\project\Hospitalizacion.Entidades\obj\Debug\Hospitalizacion.Entidades.csprojResolveAssemblyReference.cache
 C:\Users\Sistemas\Desktop\SISCSHARP\project\Hospitalizacion.Entidades\obj\Debug\Hospitalizacion.Entidades.dll
 C:\Users\Sistemas\Desktop\SISCSHARP\project\Hospitalizacion.Entidades\obj\Debug\Hospitalizacion.Entidades.pdb
+C:\Users\SIS\Desktop\SISCSHARP\project\Hospitalizacion.Entidades\bin\Debug\Hospitalizacion.Entidades.dll
+C:\Users\SIS\Desktop\SISCSHARP\project\Hospitalizacion.Entidades\bin\Debug\Hospitalizacion.Entidades.pdb
+C:\Users\SIS\Desktop\SISCSHARP\project\Hospitalizacion.Entidades\obj\Debug\Hospitalizacion.Entidades.csprojResolveAssemblyReference.cache
+C:\Users\SIS\Desktop\SISCSHARP\project\Hospitalizacion.Entidades\obj\Debug\Hospitalizacion.Entidades.dll
+C:\Users\SIS\Desktop\SISCSHARP\project\Hospitalizacion.Entidades\obj\Debug\Hospitalizacion.Entidades.pdb

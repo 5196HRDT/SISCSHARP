@@ -19,17 +19,19 @@ namespace SeguroIntegral.Escritorio
 
         private void mtAltoCosto_Click(object sender, EventArgs e)
         {
-            frmConsultaCobertura Cobertura = new frmConsultaCobertura();
+            new frmConsultaCobertura().Show();
+            /*frmConsultaCobertura Cobertura = new frmConsultaCobertura();
             Cobertura.ShowDialog();
             Cobertura.Dispose();
-
+            */
         }
 
         private void mtAmpliacion_Click(object sender, EventArgs e)
         {
-            frmCobertura Ampliacaion = new frmCobertura();
-            Ampliacaion.ShowDialog();
-            Ampliacaion.Dispose();
+            //frmCobertura Ampliacaion;//= new frmCobertura();
+            new frmCobertura().Show();
+
+           // Ampliacaion.Dispose();
         }
 
         private void frmMenu_Load(object sender, EventArgs e)

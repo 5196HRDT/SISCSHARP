@@ -85,7 +85,7 @@
             this.tbMenu.FontWeight = MetroFramework.MetroTabControlWeight.Bold;
             this.tbMenu.Location = new System.Drawing.Point(20, 60);
             this.tbMenu.Name = "tbMenu";
-            this.tbMenu.SelectedIndex = 1;
+            this.tbMenu.SelectedIndex = 0;
             this.tbMenu.Size = new System.Drawing.Size(984, 620);
             this.tbMenu.Style = MetroFramework.MetroColorStyle.Teal;
             this.tbMenu.TabIndex = 0;

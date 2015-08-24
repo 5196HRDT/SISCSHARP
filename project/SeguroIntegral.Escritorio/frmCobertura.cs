@@ -48,15 +48,17 @@ namespace SeguroIntegral.Escritorio{
             if (objFormato != null){
                 mformato = 7700;
                 lblMFormato.Text = mformato.ToString("#.00");
-                
+                lblSolicitud.Text = string.Empty;
                 cobertura = objFormato.Monto.TCobertura + mformato;
                 total= objFormato.Monto.Medicamento + objFormato.Monto.Procedimiento + objFormato.Monto.Oxigeno;
-                lblSolicitud.Text = string.Concat(lblSolicitud.Text,'-',objFormato.objPaciente.aPaterno, " ",
+                lblSolicitud.Text = string.Concat("Ampliacion "," - ",objFormato.objPaciente.aPaterno, " ",
                                     objFormato.objPaciente.aMaterno, " ", objFormato.objPaciente.nombres);
                 txtLoteFormato.Text = objFormato.lote;
                 txtNFormato.Text = objFormato.numero;
                 lblMMedicamento.Text = objFormato.Monto.Medicamento.ToString("#.00");
                 lblMProcedimiento.Text = objFormato.Monto.Procedimiento.ToString("#.00");
+                objFormato = GestorSeguro.ObtenerFormato(idformato);
+
                 lblMOxigeno.Text = objFormato.Monto.Oxigeno.ToString("#.00");
                 lblMAmpliaciones.Text = objFormato.Monto.TCobertura.ToString("#.00");
                 lblMCobertura.Text = cobertura.ToString("#.00");
@@ -86,6 +88,7 @@ namespace SeguroIntegral.Escritorio{
                 objFormato = GestorSeguro.ObtenerFormato(txtLoteFormato.Text.Trim(), txtNFormato.Text.Trim());
                 if (objFormato != null) { 
                     idformato = objFormato.idFormato;
+                    
                     lblSolicitud.Text = string.Concat(lblSolicitud.Text, objFormato.objPaciente.nombres);
                     this.infoFormato();
                 }
@@ -98,8 +101,8 @@ namespace SeguroIntegral.Escritorio{
             dptFechaS.Value = DateTime.Now;
             txtNSolicitud.Clear();
             txtMonto.Clear();
-            txtLoteFormato.Clear();
-            txtNFormato.Clear();
+          //  txtLoteFormato.Clear();
+           // txtNFormato.Clear();
             txtDiagnosticos.Clear();
             lblComentario.Text = "";
             lblMAmpliaciones.Text = "";
@@ -109,12 +112,16 @@ namespace SeguroIntegral.Escritorio{
             lblTotal.Text = "";
             lblMCobertura.Text = "";
             lblMRestante.Text = "";
+            lblSolicitud.Text = "Ampliacion: ";
+            id = 0;
+            idformato = 0;
             btnGrabar.Enabled = false;
+
         }
 
         private void btnCancelar_Click(object sender, EventArgs e) {
             this.pSolicitud.Enabled = false;
-            id = 0;   idformato = 0;
+           
             btnGrabar.Enabled = false;
             this.Limpiar();
             this.txtFormato.Select();
@@ -152,13 +159,31 @@ namespace SeguroIntegral.Escritorio{
                     }                    
                 }   
             }
+            if (e.KeyCode == Keys.Delete) {
+                if (lvAmpliaciones.SelectedIndices.Count > 0)
+                {
+                    DialogResult r = MetroMessageBox.Show(this, "DESEA ELIMINAR AMPLIACION", "INFORMACION", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (r == DialogResult.Yes)
+                    {
+                        id = int.Parse(lvAmpliaciones.SelectedItems[0].SubItems[0].Text);
+                        GestorSeguro.EliminarAmpliacion(id);
+                        lst = GestorSeguro.ListarAmpliacion("", "");
+                        this.LlenarLista();
+                    }
+                    
+                    
+                    
+                }   
+            }
         }
 
         private void btnNuevo_Click(object sender, EventArgs e){
+            this.txtLoteFormato.Text = txtNLote.Text;
+            this.txtNFormato.Text = txtFormato.Text;
             Limpiar();
             pSolicitud.Enabled = true;
             btnGrabar.Enabled = true;
-            Variables.instancia().InhabilitarControles(pSolicitud, true);            
+            Variables.instancia().InhabilitarControles(pSolicitud, true);      
             txtNSolicitud.Select();
         }
 
@@ -175,6 +200,9 @@ namespace SeguroIntegral.Escritorio{
             if (GestorSeguro.GuardarAmpliacion(objAmpliacion) > 0) {
                 MetroMessageBox.Show(this, "\n \n SE GUARDO CORRECTAMENTE", "INFORMACION", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Limpiar();
+                this.pSolicitud.Enabled = false;
+                lst = GestorSeguro.ListarAmpliacion(txtNLote.Text, txtFormato.Text);
+                this.LlenarLista();
             }
             else MetroMessageBox.Show(this, "\n \n OCURRIO UN ERROR", "INFORMACION", MessageBoxButtons.OK, MessageBoxIcon.Error);
            
@@ -186,5 +214,7 @@ namespace SeguroIntegral.Escritorio{
                 this.LlenarLista();
             }
         }
+
+      
     }
 }

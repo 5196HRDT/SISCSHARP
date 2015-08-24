@@ -63,6 +63,8 @@ namespace SeguroIntegral.Datos
             finally { this.cerrar(); }
             return objFormato;
         }
+
+
         public Formato ObtenerFormato(string lote, string numero)
         {
             Formato objFormato = null;
@@ -127,7 +129,7 @@ namespace SeguroIntegral.Datos
             return lstFormatos;
         }
 
-        public List<Formato> ConsumoOxigenoFechas(DateTime FechaI, DateTime FechaF)
+        public List<Formato> ConsumoOxigeno(DateTime FechaI, DateTime FechaF)
         {
             List<Formato> lstFormatos = null;
             try
@@ -169,7 +171,7 @@ namespace SeguroIntegral.Datos
             return lstFormatos;
         }
 
-        public List<Formato> ConsumoOxigenoFechas(string nroHistoria)
+        public List<Formato> ConsumoOxigeno(string nroHistoria)
         {
             List<Formato> lstFormatos = null;
             try
@@ -201,16 +203,36 @@ namespace SeguroIntegral.Datos
                     lstFormatos.Add(objFormato);
                 }
             }
-            catch (Exception)
+            catch (Exception e)
             {
-
-                throw;
+                throw e;
             }
             finally { this.cerrar(); }
             return lstFormatos;
         }
-        
-        
+
+        public Formato ConsumoOxigeno(Formato objFormato) {
+            //Formato objFormato = null;
+            try
+            {
+                cmd = new SqlCommand("sp_ObtenerOxigenoFormato");
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Connection = Conexion.instancia().obtenerConexion();
+                cmd.Parameters.AddWithValue("@idSis", objFormato.idFormato);
+                dr = cmd.ExecuteReader();  
+                if (dr.Read())
+                {                    
+                    objFormato.Monto.Oxigeno = (decimal)dr["Oxigeno"];                
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { this.cerrar(); }
+            return objFormato;
+        }
+
 
         public List<Formato> ConsumoFormatos(DateTime FechaI, DateTime FechaF)
         {

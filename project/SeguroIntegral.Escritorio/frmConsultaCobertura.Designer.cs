@@ -121,7 +121,7 @@
             this.btnImprimir.BackgroundImage = global::SeguroIntegral.Escritorio.Properties.Resources.print1;
             this.btnImprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnImprimir.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.btnImprimir.Location = new System.Drawing.Point(922, 81);
+            this.btnImprimir.Location = new System.Drawing.Point(917, 90);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(118, 32);
             this.btnImprimir.TabIndex = 4;
@@ -146,6 +146,8 @@
             this.gvLista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gvLista.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.gvLista.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gvLista.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gvLista.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gvLista.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
