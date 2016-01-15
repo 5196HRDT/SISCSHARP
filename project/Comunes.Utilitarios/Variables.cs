@@ -11,28 +11,33 @@ namespace Comunes.Utilitarios
     public class Variables
     {
         private static Variables _instancia;
+        // SIngleton
         private Variables() { }
         public static Variables instancia() {
             if (_instancia == null) _instancia = new Variables();
             return _instancia;
         }
+
+        // Variables Globales
         public int codigo { get; set; }
         public string nombres { get; set; }
         public string usuario { get; set; }
-
         public string mensaje { get; set; }
+      
+        // Metodos y Funciones Globales
 
-        //public int[] anios { get; set; }
+        // Fechas Años Lista
         public List<string> anios =  new List<string>();
+
         public List<string> Anios()
         {
             for (int i = DateTime.Now.Year; i > DateTime.Now.Year - 12; i--)
             {
                 anios.Add( i.ToString());
-
             }
             return anios;
         }
+        
         public void InhabilitarControles(Panel Panel, bool v)
         {
             foreach (Control c in Panel.Controls)
@@ -43,20 +48,8 @@ namespace Comunes.Utilitarios
                 }
             }
             
-        }
-            /*
-         Public Sub LimpiarTab(ByVal F As TabPage)
-        Dim X, y As New Object
-        For Each X In F.Controls
-            If TypeOf X Is TextBox Then X.Text = ""
-            If TypeOf X Is Label Then If X.borderstyle = 1 Then X.text = ""
-            If TypeOf X Is MaskedTextBox Then X.Text = ""
-            If TypeOf X Is CheckBox Then X.CHECKED = False
-
-
-        Next
-    End Sub
-             * */
+        }            
+      
     }
 }
 

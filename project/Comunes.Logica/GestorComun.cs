@@ -40,6 +40,17 @@ namespace Comunes.Dominio
                 throw e;
             }
         }
+        public List<Cie10> BuscarCie10(string parameto, int operacion) {
+            try
+            {
+                return Cie10Dao.instancia().Buscar(parameto, operacion);
+            }
+            catch (Exception e)
+            {
+                
+                throw e;
+            }
+        }
 
     }
 }

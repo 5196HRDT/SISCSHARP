@@ -33,6 +33,8 @@
             this.tbMenu = new MetroFramework.Controls.MetroTabControl();
             this.tbConsultas = new System.Windows.Forms.TabPage();
             this.mtAltoCosto = new MetroFramework.Controls.MetroTile();
+            this.mtDerivacion = new MetroFramework.Controls.MetroTile();
+            this.tbSepelio = new System.Windows.Forms.TabPage();
             this.tbPersona.SuspendLayout();
             this.tbMenu.SuspendLayout();
             this.tbConsultas.SuspendLayout();
@@ -40,6 +42,7 @@
             // 
             // tbPersona
             // 
+            this.tbPersona.Controls.Add(this.mtDerivacion);
             this.tbPersona.Controls.Add(this.mtAmpliacion);
             this.tbPersona.HorizontalScrollbarBarColor = true;
             this.tbPersona.HorizontalScrollbarHighlightOnWheel = false;
@@ -80,6 +83,7 @@
             // 
             this.tbMenu.Controls.Add(this.tbPersona);
             this.tbMenu.Controls.Add(this.tbConsultas);
+            this.tbMenu.Controls.Add(this.tbSepelio);
             this.tbMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbMenu.FontSize = MetroFramework.MetroTabControlSize.Tall;
             this.tbMenu.FontWeight = MetroFramework.MetroTabControlWeight.Bold;
@@ -121,6 +125,33 @@
             this.mtAltoCosto.UseTileImage = true;
             this.mtAltoCosto.Click += new System.EventHandler(this.mtAltoCosto_Click);
             // 
+            // mtDerivacion
+            // 
+            this.mtDerivacion.ActiveControl = null;
+            this.mtDerivacion.AutoSize = true;
+            this.mtDerivacion.Location = new System.Drawing.Point(277, 38);
+            this.mtDerivacion.Name = "mtDerivacion";
+            this.mtDerivacion.Size = new System.Drawing.Size(216, 172);
+            this.mtDerivacion.Style = MetroFramework.MetroColorStyle.Blue;
+            this.mtDerivacion.TabIndex = 3;
+            this.mtDerivacion.Text = "&Derivacion Paciente";
+            this.mtDerivacion.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.mtDerivacion.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.mtDerivacion.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.mtDerivacion.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.mtDerivacion.UseSelectable = true;
+            this.mtDerivacion.UseStyleColors = true;
+            this.mtDerivacion.UseTileImage = true;
+            this.mtDerivacion.Click += new System.EventHandler(this.mtDerivacion_Click);
+            // 
+            // tbSepelio
+            // 
+            this.tbSepelio.Location = new System.Drawing.Point(4, 44);
+            this.tbSepelio.Name = "tbSepelio";
+            this.tbSepelio.Size = new System.Drawing.Size(976, 572);
+            this.tbSepelio.TabIndex = 3;
+            this.tbSepelio.Text = "Sepelio";
+            // 
             // frmMenu
             // 
             this.ApplyImageInvert = true;
@@ -150,6 +181,8 @@
         private System.Windows.Forms.TabPage tbConsultas;
         private MetroFramework.Controls.MetroTile mtAmpliacion;
         private MetroFramework.Controls.MetroTile mtAltoCosto;
+        private MetroFramework.Controls.MetroTile mtDerivacion;
+        private System.Windows.Forms.TabPage tbSepelio;
 
     }
 }

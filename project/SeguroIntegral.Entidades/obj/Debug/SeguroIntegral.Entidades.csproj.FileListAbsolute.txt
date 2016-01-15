@@ -33,3 +33,10 @@ C:\Users\SIS\Desktop\SISCSHARP\project\SeguroIntegral.Entidades\bin\Debug\Comune
 C:\Users\SIS\Desktop\SISCSHARP\project\SeguroIntegral.Entidades\obj\Debug\SeguroIntegral.Entidades.csprojResolveAssemblyReference.cache
 C:\Users\SIS\Desktop\SISCSHARP\project\SeguroIntegral.Entidades\obj\Debug\SeguroIntegral.Entidades.dll
 C:\Users\SIS\Desktop\SISCSHARP\project\SeguroIntegral.Entidades\obj\Debug\SeguroIntegral.Entidades.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Entidades\bin\Debug\SeguroIntegral.Entidades.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Entidades\bin\Debug\SeguroIntegral.Entidades.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Entidades\bin\Debug\Comunes.Entidades.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Entidades\bin\Debug\Comunes.Entidades.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Entidades\obj\Debug\SeguroIntegral.Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Entidades\obj\Debug\SeguroIntegral.Entidades.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Entidades\obj\Debug\SeguroIntegral.Entidades.pdb

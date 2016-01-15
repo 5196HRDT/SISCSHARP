@@ -43,3 +43,12 @@ C:\Users\SIS\Desktop\SISCSHARP\project\Derivacion.Logica\bin\Debug\Comunes.Entid
 C:\Users\SIS\Desktop\SISCSHARP\project\Derivacion.Logica\obj\Debug\Derivacion.Dominio.csprojResolveAssemblyReference.cache
 C:\Users\SIS\Desktop\SISCSHARP\project\Derivacion.Logica\obj\Debug\Derivacion.Logica.dll
 C:\Users\SIS\Desktop\SISCSHARP\project\Derivacion.Logica\obj\Debug\Derivacion.Logica.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Derivacion.Logica\bin\Debug\Derivacion.Logica.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Derivacion.Logica\bin\Debug\Derivacion.Logica.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Derivacion.Logica\bin\Debug\Comunes.Datos.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Derivacion.Logica\bin\Debug\Comunes.Entidades.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Derivacion.Logica\bin\Debug\Comunes.Datos.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Derivacion.Logica\bin\Debug\Comunes.Entidades.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Derivacion.Logica\obj\Debug\Derivacion.Dominio.csprojResolveAssemblyReference.cache
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Derivacion.Logica\obj\Debug\Derivacion.Logica.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Derivacion.Logica\obj\Debug\Derivacion.Logica.pdb

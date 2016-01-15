@@ -16,13 +16,13 @@ namespace SeguroIntegral.Escritorio
 {
     public partial class frmConsultaCobertura : MetroForm
     {
+        private List<Formato> list;
+        private int pulsado = 0;
+        private DateTime FechaI, FechaF;
         public frmConsultaCobertura()
         {
             InitializeComponent();
         }
-        private List<Formato> list;
-        private int pulsado = 0;
-        private DateTime FechaI, FechaF;
         private void CargarGrid()
         {
             list = GestorSeguroIntegral.instancia().EstadoCuenta(FechaI, FechaF);
@@ -141,7 +141,7 @@ namespace SeguroIntegral.Escritorio
 
                         break;
                     case false:
-                        FechaI = DateTime.Parse(string.Concat("01/0", (cboMes.SelectedIndex + 1).ToString(), "/", DateTime.Now.Year));
+                        FechaI = DateTime.Parse(string.Concat("01/", (cboMes.SelectedIndex + 1).ToString(), "/", DateTime.Now.Year));
                         FechaF = FechaI.AddDays(-1);
                         FechaF = FechaF.AddMonths(1);
 

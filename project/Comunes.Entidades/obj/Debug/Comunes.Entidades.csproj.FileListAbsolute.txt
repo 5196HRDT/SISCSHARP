@@ -19,3 +19,8 @@ C:\Users\SIS\Desktop\SISCSHARP\project\Comunes.Entidades\bin\Debug\Comunes.Entid
 C:\Users\SIS\Desktop\SISCSHARP\project\Comunes.Entidades\obj\Debug\Comunes.Entidades.csprojResolveAssemblyReference.cache
 C:\Users\SIS\Desktop\SISCSHARP\project\Comunes.Entidades\obj\Debug\Comunes.Entidades.dll
 C:\Users\SIS\Desktop\SISCSHARP\project\Comunes.Entidades\obj\Debug\Comunes.Entidades.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Comunes.Entidades\bin\Debug\Comunes.Entidades.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Comunes.Entidades\bin\Debug\Comunes.Entidades.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Comunes.Entidades\obj\Debug\Comunes.Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Comunes.Entidades\obj\Debug\Comunes.Entidades.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Comunes.Entidades\obj\Debug\Comunes.Entidades.pdb

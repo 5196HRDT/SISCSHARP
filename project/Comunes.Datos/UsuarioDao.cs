@@ -51,6 +51,9 @@ namespace Comunes.Datos
 
             return objUsuario;
         }
+        
+        
+        
         private void cerrar()
         {
             dr.Close();

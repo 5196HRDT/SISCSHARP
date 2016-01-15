@@ -7,7 +7,8 @@ namespace Comunes.Datos
     public class Conexion
     {
         private static Conexion _instancia;
-        private static SqlConnection con;        
+        private static SqlConnection con;
+        private SqlCommand cmd;
         private Conexion() { }
         public  static Conexion instancia() {
             if (_instancia == null)
@@ -34,7 +35,25 @@ namespace Comunes.Datos
             }
             return con;
         }
-
+        // EN PRUEBA
+        public int EjecutaSp(string procedimiento, string[] Parametros, object obj) { 
+            int retorno=0;
+            try
+            {
+                cmd = new SqlCommand();
+                cmd.CommandText = procedimiento;
+                foreach (string p in Parametros) { 
+                    
+                }
+                
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+            return retorno;
+        }
         
     }
 }

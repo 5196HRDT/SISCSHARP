@@ -25,3 +25,10 @@ C:\Users\SIS\Desktop\SISCSHARP\project\Comunes.Utilitarios\bin\Debug\MetroFramew
 C:\Users\SIS\Desktop\SISCSHARP\project\Comunes.Utilitarios\obj\Debug\Comunes.Utilitarios.csprojResolveAssemblyReference.cache
 C:\Users\SIS\Desktop\SISCSHARP\project\Comunes.Utilitarios\obj\Debug\Comunes.Utilitarios.dll
 C:\Users\SIS\Desktop\SISCSHARP\project\Comunes.Utilitarios\obj\Debug\Comunes.Utilitarios.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Comunes.Utilitarios\bin\Debug\Comunes.Utilitarios.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Comunes.Utilitarios\bin\Debug\Comunes.Utilitarios.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Comunes.Utilitarios\bin\Debug\MetroFramework.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Comunes.Utilitarios\bin\Debug\MetroFramework.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Comunes.Utilitarios\obj\Debug\Comunes.Utilitarios.csprojResolveAssemblyReference.cache
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Comunes.Utilitarios\obj\Debug\Comunes.Utilitarios.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Comunes.Utilitarios\obj\Debug\Comunes.Utilitarios.pdb

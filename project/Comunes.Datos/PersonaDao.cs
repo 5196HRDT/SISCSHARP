@@ -51,12 +51,28 @@ namespace Comunes.Datos
             }
             finally
             {
-                cmd.Connection.Close();
-                cmd.Dispose();
-                cmd.Connection.Dispose();
-                dr.Dispose();
+                this.cerrar();
             }
             return objPersona;
+        }
+        public int registraPersona(Persona objPersona) {
+            int retorno = 0;
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            return retorno;
+        }
+
+        private void cerrar() {
+            cmd.Connection.Close();
+            cmd.Dispose();
+            cmd.Connection.Dispose();
+            dr.Dispose();
         }
 
     }

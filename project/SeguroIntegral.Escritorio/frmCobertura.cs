@@ -40,10 +40,8 @@ namespace SeguroIntegral.Escritorio{
                 Fila.SubItems.Add(lst[i].observacion);
             }
         }
-
         private void infoFormato(){
             decimal   mformato, cobertura, total;
-            
             objFormato = GestorSeguro.ObtenerFormato(idformato);
             if (objFormato != null){
                 mformato = 7700;
@@ -64,6 +62,7 @@ namespace SeguroIntegral.Escritorio{
                 lblMCobertura.Text = cobertura.ToString("#.00");
                 lblTotal.Text = total.ToString("#.00");
                 lblMRestante.Text = (cobertura - total).ToString("#.00");
+
                 decimal restante=decimal.Parse(lblMRestante.Text);
                 if (restante > 5000){
                     lblComentario.Text = "TODO ESTA BIEN, NO REQUIERE AMPLIACION";
@@ -80,15 +79,13 @@ namespace SeguroIntegral.Escritorio{
                 }
             }
         }
-
         private void txtNFormato_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            if ((e.KeyCode == Keys.Enter || e.KeyCode==Keys.Tab) && (txtLoteFormato.Text.Length>0 && txtNFormato.Text.Length>0))
             {
                 objFormato = GestorSeguro.ObtenerFormato(txtLoteFormato.Text.Trim(), txtNFormato.Text.Trim());
                 if (objFormato != null) { 
-                    idformato = objFormato.idFormato;
-                    
+                    idformato = objFormato.idFormato;                    
                     lblSolicitud.Text = string.Concat(lblSolicitud.Text, objFormato.objPaciente.nombres);
                     this.infoFormato();
                 }
@@ -101,8 +98,6 @@ namespace SeguroIntegral.Escritorio{
             dptFechaS.Value = DateTime.Now;
             txtNSolicitud.Clear();
             txtMonto.Clear();
-          //  txtLoteFormato.Clear();
-           // txtNFormato.Clear();
             txtDiagnosticos.Clear();
             lblComentario.Text = "";
             lblMAmpliaciones.Text = "";
@@ -116,9 +111,7 @@ namespace SeguroIntegral.Escritorio{
             id = 0;
             idformato = 0;
             btnGrabar.Enabled = false;
-
         }
-
         private void btnCancelar_Click(object sender, EventArgs e) {
             this.pSolicitud.Enabled = false;
            
@@ -127,19 +120,15 @@ namespace SeguroIntegral.Escritorio{
             this.txtFormato.Select();
             Variables.instancia().InhabilitarControles(pSolicitud, false);
         }
-
         private void btnSalir_Click(object sender, EventArgs e) {
             this.Close();
         }
-
         private void txtFormato_KeyDown(object sender, KeyEventArgs e){
             if (e.KeyCode == Keys.Enter){
                 lst= GestorSeguro.ListarAmpliacion(txtNLote.Text, txtFormato.Text);
                 this.LlenarLista();
             }
-        }
-
-        
+        }        
         private void lvAmpliaciones_KeyDown(object sender, KeyEventArgs e) {
             if (e.KeyCode == Keys.Enter){                
                 if (lvAmpliaciones.SelectedIndices.Count > 0) {
@@ -176,7 +165,6 @@ namespace SeguroIntegral.Escritorio{
                 }   
             }
         }
-
         private void btnNuevo_Click(object sender, EventArgs e){
             this.txtLoteFormato.Text = txtNLote.Text;
             this.txtNFormato.Text = txtFormato.Text;
@@ -186,7 +174,6 @@ namespace SeguroIntegral.Escritorio{
             Variables.instancia().InhabilitarControles(pSolicitud, true);      
             txtNSolicitud.Select();
         }
-
         private void btnGrabar_Click(object sender, EventArgs e){
             objAmpliacion = new Ampliaciones();
             objAmpliacion.idAmpliacion = id;
@@ -207,7 +194,6 @@ namespace SeguroIntegral.Escritorio{
             else MetroMessageBox.Show(this, "\n \n OCURRIO UN ERROR", "INFORMACION", MessageBoxButtons.OK, MessageBoxIcon.Error);
            
         }
-
         private void dtpFechaF_KeyDown(object sender, KeyEventArgs e) {
             if (e.KeyCode == Keys.Enter){
                 lst = GestorSeguro.ListarAmpliaciones(dtpFechaI.Value.Date, dtpFechaF.Value.Date);

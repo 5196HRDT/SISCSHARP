@@ -53,7 +53,8 @@ namespace SeguroIntegral.Datos
                     objFormato.Monto.Medicamento = (decimal)dr["TMedicamento"];
                     objFormato.Monto.Procedimiento = (decimal)dr["TProcedimiento"];
                     objFormato.Monto.TCobertura = (decimal)dr["TCobertura"];
-                    objFormato.Monto.Oxigeno = 0;
+                    
+                    objFormato.Monto.Oxigeno = (decimal)dr["Oxigeno"];
                 }
             }
             catch (Exception e)

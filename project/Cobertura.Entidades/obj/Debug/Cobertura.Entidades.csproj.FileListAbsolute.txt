@@ -43,3 +43,12 @@ C:\Users\SIS\Desktop\SISCSHARP\project\Cobertura.Entidades\bin\Debug\SeguroInteg
 C:\Users\SIS\Desktop\SISCSHARP\project\Cobertura.Entidades\obj\Debug\Cobertura.Entidades.csprojResolveAssemblyReference.cache
 C:\Users\SIS\Desktop\SISCSHARP\project\Cobertura.Entidades\obj\Debug\Cobertura.Entidades.dll
 C:\Users\SIS\Desktop\SISCSHARP\project\Cobertura.Entidades\obj\Debug\Cobertura.Entidades.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Cobertura.Entidades\bin\Debug\Cobertura.Entidades.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Cobertura.Entidades\bin\Debug\Cobertura.Entidades.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Cobertura.Entidades\bin\Debug\Comunes.Entidades.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Cobertura.Entidades\bin\Debug\SeguroIntegral.Entidades.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Cobertura.Entidades\bin\Debug\Comunes.Entidades.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Cobertura.Entidades\bin\Debug\SeguroIntegral.Entidades.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Cobertura.Entidades\obj\Debug\Cobertura.Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Cobertura.Entidades\obj\Debug\Cobertura.Entidades.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Cobertura.Entidades\obj\Debug\Cobertura.Entidades.pdb

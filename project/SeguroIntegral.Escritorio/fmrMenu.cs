@@ -38,5 +38,10 @@ namespace SeguroIntegral.Escritorio
         {
 
         }
+
+        private void mtDerivacion_Click(object sender, EventArgs e)
+        {
+            new frmDerivacion().Show();
+        }
     }
 }

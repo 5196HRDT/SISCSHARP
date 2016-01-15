@@ -88,3 +88,18 @@ D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework.D
 D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.csproj.GenerateResource.Cache
 D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.exe
 D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\MetroFramework.Demo\bin\Debug\Data\Books.xml
+C:\Users\Soporte01\Desktop\SISCSHARP\project\MetroFramework.Demo\bin\Debug\MetroFramework.Demo.exe.config
+C:\Users\Soporte01\Desktop\SISCSHARP\project\MetroFramework.Demo\bin\Debug\MetroFramework.Demo.exe
+C:\Users\Soporte01\Desktop\SISCSHARP\project\MetroFramework.Demo\bin\Debug\MetroFramework.Demo.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\MetroFramework.Demo\bin\Debug\MetroFramework.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\MetroFramework.Demo\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\MetroFramework.Demo\bin\Debug\MetroFramework.Fonts.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\MetroFramework.Demo\bin\Debug\MetroFramework.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.csprojResolveAssemblyReference.cache
+C:\Users\Soporte01\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.MainForm.resources
+C:\Users\Soporte01\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.Properties.Resources.resources
+C:\Users\Soporte01\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.TaskWindowControl.resources
+C:\Users\Soporte01\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.csproj.GenerateResource.Cache
+C:\Users\Soporte01\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.exe
+C:\Users\Soporte01\Desktop\SISCSHARP\project\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.pdb

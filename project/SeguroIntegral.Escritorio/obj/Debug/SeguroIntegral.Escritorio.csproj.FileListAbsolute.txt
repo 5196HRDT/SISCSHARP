@@ -198,3 +198,39 @@ D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.E
 D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.csproj.GenerateResource.Cache
 D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.exe
 D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.exe
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\SeguroIntegral.Escritorio.exe
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\SeguroIntegral.Escritorio.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\Cobertura.Entidades.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\Comunes.Entidades.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\Comunes.Logica.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\Comunes.Utilitarios.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\Derivacion.Logica.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\MetroFramework.Design.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\MetroFramework.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\SeguroIntegral.Dominio.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\SeguroIntegral.Entidades.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\Comunes.Datos.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\SeguroIntegralDao.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\Cobertura.Datos.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\Cobertura.Entidades.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\Comunes.Entidades.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\Comunes.Logica.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\Comunes.Utilitarios.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\Derivacion.Logica.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\SeguroIntegral.Dominio.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\SeguroIntegral.Entidades.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\Comunes.Datos.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\SeguroIntegralDao.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\bin\Debug\Cobertura.Datos.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.csprojResolveAssemblyReference.cache
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.frmMenu.resources
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.frmCobertura.resources
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.frmConsultaCobertura.resources
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.frmLogin.resources
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.Properties.Resources.resources
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.TaskWindowControl.resources
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.csproj.GenerateResource.Cache
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Escritorio\obj\Debug\SeguroIntegral.Escritorio.frmDerivacion.resources

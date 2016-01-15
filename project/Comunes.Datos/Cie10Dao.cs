@@ -19,7 +19,35 @@ namespace Comunes.Datos
         }
         protected SqlCommand cmd;
         protected SqlDataReader dr;
-        public List<Cie10> buscar(string parametro, int operacion )
+        public Cie10 Obtener(int id)
+        {
+            Cie10 objCie = null;
+            try
+            {
+                cmd = new SqlCommand("Cie10HEListar");
+                cmd.CommandType = CommandType.StoredProcedure;
+                using (cmd.Connection = Conexion.instancia().obtenerConexion())
+                {
+                    cmd.Parameters.AddWithValue("@idCie10", id);
+                    dr = cmd.ExecuteReader();
+                    if (dr.Read())
+                    {
+                        objCie = new Cie10();
+                        objCie.id = (int)dr["IdCie"];
+                        objCie.codigo = dr["Codigo"].ToString();
+                        objCie.descripcion = dr["Descripcion"].ToString();
+                    }
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally { this.cerrar(); }
+            return objCie;
+        }
+        public List<Cie10> Buscar(string parametro, int operacion)
         {
             List<Cie10> lstCie10 = null;
             try
@@ -32,11 +60,12 @@ namespace Comunes.Datos
                 cmd.Parameters.AddWithValue("@Oper", operacion);
                 dr = cmd.ExecuteReader();
                 Cie10 objCie10 = null;
-                while (dr.Read()) {
+                while (dr.Read())
+                {
                     objCie10 = new Cie10();
                     objCie10.id = (int)dr["idCie10"];
                     objCie10.codigo = dr["codigo"].ToString();
-                    objCie10.descripcion = dr["descripcion"].ToString();                    
+                    objCie10.descripcion = dr["descripcion"].ToString();
                     lstCie10.Add(objCie10);
                 }
             }
@@ -45,12 +74,14 @@ namespace Comunes.Datos
 
                 throw e;
             }
-            finally {
+            finally
+            {
                 this.cerrar();
             }
             return lstCie10;
         }
-        private void cerrar() {
+        private void cerrar()
+        {
             cmd.Connection.Close();
             dr.Close();
             cmd.Dispose();

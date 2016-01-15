@@ -41,3 +41,12 @@ C:\Users\SIS\Desktop\SISCSHARP\project\Comunes.Datos\bin\Debug\Comunes.Utilitari
 C:\Users\SIS\Desktop\SISCSHARP\project\Comunes.Datos\obj\Debug\Comunes.Datos.csprojResolveAssemblyReference.cache
 C:\Users\SIS\Desktop\SISCSHARP\project\Comunes.Datos\obj\Debug\Comunes.Datos.dll
 C:\Users\SIS\Desktop\SISCSHARP\project\Comunes.Datos\obj\Debug\Comunes.Datos.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Comunes.Datos\bin\Debug\Comunes.Datos.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Comunes.Datos\bin\Debug\Comunes.Datos.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Comunes.Datos\bin\Debug\Comunes.Entidades.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Comunes.Datos\bin\Debug\Comunes.Utilitarios.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Comunes.Datos\bin\Debug\Comunes.Entidades.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Comunes.Datos\bin\Debug\Comunes.Utilitarios.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Comunes.Datos\obj\Debug\Comunes.Datos.csprojResolveAssemblyReference.cache
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Comunes.Datos\obj\Debug\Comunes.Datos.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\Comunes.Datos\obj\Debug\Comunes.Datos.pdb

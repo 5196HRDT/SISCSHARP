@@ -78,6 +78,12 @@
     <Compile Include="frmConsultaCobertura.Designer.cs">
       <DependentUpon>frmConsultaCobertura.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDerivacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDerivacion.designer.cs">
+      <DependentUpon>frmDerivacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaCobertura.resx">
       <DependentUpon>frmConsultaCobertura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDerivacion.resx">
+      <DependentUpon>frmDerivacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

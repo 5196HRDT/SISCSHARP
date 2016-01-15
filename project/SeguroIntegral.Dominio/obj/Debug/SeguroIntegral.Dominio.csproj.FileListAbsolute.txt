@@ -83,3 +83,20 @@ D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.D
 D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\obj\Debug\SeguroIntegral.Dominio.csprojResolveAssemblyReference.cache
 D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\obj\Debug\SeguroIntegral.Dominio.dll
 D:\INFORMATICA ANTIGUO\Users\Jefatura\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\obj\Debug\SeguroIntegral.Dominio.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\SeguroIntegral.Dominio.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\SeguroIntegral.Dominio.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\Cobertura.Datos.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\Cobertura.Entidades.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\SeguroIntegral.Entidades.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\SeguroIntegralDao.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\Comunes.Datos.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\Comunes.Entidades.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\Cobertura.Datos.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\Cobertura.Entidades.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\SeguroIntegral.Entidades.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\SeguroIntegralDao.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\Comunes.Datos.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\bin\Debug\Comunes.Entidades.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\obj\Debug\SeguroIntegral.Dominio.csprojResolveAssemblyReference.cache
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\obj\Debug\SeguroIntegral.Dominio.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\SeguroIntegral.Dominio\obj\Debug\SeguroIntegral.Dominio.pdb

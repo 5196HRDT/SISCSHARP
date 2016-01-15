@@ -33,3 +33,10 @@ C:\Users\SIS\Desktop\SISCSHARP\project\MetroFramework.Design\bin\Debug\MetroFram
 C:\Users\SIS\Desktop\SISCSHARP\project\MetroFramework.Design\obj\Debug\MetroFramework.Design.csprojResolveAssemblyReference.cache
 C:\Users\SIS\Desktop\SISCSHARP\project\MetroFramework.Design\obj\Debug\MetroFramework.Design.dll
 C:\Users\SIS\Desktop\SISCSHARP\project\MetroFramework.Design\obj\Debug\MetroFramework.Design.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\MetroFramework.Design\bin\Debug\MetroFramework.Design.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\MetroFramework.Design\bin\Debug\MetroFramework.Design.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\MetroFramework.Design\bin\Debug\MetroFramework.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\MetroFramework.Design\bin\Debug\MetroFramework.pdb
+C:\Users\Soporte01\Desktop\SISCSHARP\project\MetroFramework.Design\obj\Debug\MetroFramework.Design.csprojResolveAssemblyReference.cache
+C:\Users\Soporte01\Desktop\SISCSHARP\project\MetroFramework.Design\obj\Debug\MetroFramework.Design.dll
+C:\Users\Soporte01\Desktop\SISCSHARP\project\MetroFramework.Design\obj\Debug\MetroFramework.Design.pdb
